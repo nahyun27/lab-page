@@ -1,0 +1,36 @@
+{
+  "option": "E",
+  "labName": "Lab Name",
+  "labName2": "Hanyang AI & Cyber Security Lab",
+  "Home": "Home",
+  "Research": "Research",
+  "Members": "Members",
+  "Publications": "Publications",
+  "Contact": "Contact",
+
+  "welcome": "Welcome to 000000 Lab!",
+  "intro1": "Our research endeavors are aimed at addressing complex security issues",
+  "intro2": "and enhancing cybersecurity in an ever-evolving digital landscape.",
+  "recruitingTitle": "[Computer Science/Artificial Intelligence] Research Assistant Positions Available",
+  "recruitingDesc": "We are currently recruiting graduate and undergraduate research assistants. Our research areas primarily focus on system security (IoT, mobile, etc.), application security, cybercrime, and usable security (HCI with computer security). We conduct research in these fields using technologies such as reverse engineering, forensics, AI/ML, NLP, big data analysis, signal processing, and more. We welcome applications from students who are interested in our lab. If you have any questions or would like to request a meeting with a professor, please refer to the 'contact' section.",
+  "button": "⬇ Reach out to us right now ⬇",
+  
+  "research": "Research Area",
+  "researchDesc1": "Our research lab conducts research on a wide range of security-related topics such as system security (IoT, mobile, etc.), cybercrime, usable security (HCI with computer security), and more.",
+  "researchDesc2": "We tackle various security challenges in these fields by utilizing technologies such as reverse engineering, forensics, artificial intelligence/machine learning, natural language processing, big data analysis, and signal processing. ",
+  "ai": "AI Security",
+  "mobile": "Mobile Security",
+  "system": "System Security",
+  "aiDesc": "Our research lab delves into the security aspects of AI systems and algorithms, addressing emerging threats and exploring innovative approaches to enhance security with a particular focus on areas like Adversarial Attacks and usage of Explainable AI.",
+  "mobileDesc": "Mobile devices play an indispensable role in modern society, making mobile security more crucial than ever. We focus on discovering and addressing security vulnerabilities in mobile apps and platforms, developing solutions to ensure the safe use of mobile devices.",
+  "systemDesc": "System security is paramount in safeguarding various IT systems, including networks, operating systems, cloud systems, and IoT devices. Our lab is dedicated to developing innovative technologies and methods to tackle new challenges and threats in system security.",
+
+  "publications": "Publications",
+
+  "prof": "Professor",
+  "phd": "Ph.D. Students",
+  "master": "Master Students",
+
+  "asdf": "asdf"
+
+}
