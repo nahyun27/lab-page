@@ -1,6 +1,6 @@
 {
   "option": "E",
-  "labName": "Lab Name",
+  "labName": "ICY Lab",
   "labName2": "Hanyang AI & Cyber Security Lab",
   "Home": "Home",
   "Research": "Research",
@@ -8,7 +8,7 @@
   "Publications": "Publications",
   "Contact": "Contact",
 
-  "welcome": "Welcome to 000000 Lab!",
+  "welcome": "Welcome to ICY Lab!",
   "intro1": "Our research endeavors are aimed at addressing complex security issues",
   "intro2": "and enhancing cybersecurity in an ever-evolving digital landscape.",
   "recruitingTitle": "[Computer Science/Artificial Intelligence] Research Assistant Positions Available",
@@ -30,7 +30,46 @@
   "prof": "Professor",
   "phd": "Ph.D. Students",
   "master": "Master Students",
+  
+  "cont1": "If you're interested in our research lab,",
+  "cont2": "please feel free to reach out to us anytime!",
 
-  "asdf": "asdf"
+  "address": "55 Hanyangdeahak-ro, Sangnok-gu, Ansan, Gyeonggi-do, 15588, Korea",
+  "address2": "room 312, Engineering Building 4", 
 
+  "yeonjoon":  "Yeonjoon Lee",
+  "profDesc1":  "Assistant Professor, Hanyang university ERICA",
+  "profDesc2":  "PhD in Security Informatics in Indiana University Bloomingtone",
+
+  "gagyeom":  "Gagyeom Kim", 
+  "sungbin":  "Sungbin Park", 
+  "sungju":  "Sungju Yun", 
+  "dahye":  "Dahye Song", 
+
+  "jiwon":  "Jiwon Han", 
+  "jungmin":  "Jungmin Lee", 
+  "cheng":  "Zhen Yicheng", 
+  "lixiang":  "Li Xiang", 
+  "yonghyun":  "Younghyun Lee",  
+  "geonhee":  "Gunhee Cho", 
+  "hoon":  "Hoon Ji", 
+  "minjae":  "Minjae Kang",
+  "nahyun":  "Nahyun Kim",
+
+
+  "interest":  "Interest",
+
+  "gagyeomR":  "Android Security", 
+  "sungbinR":  "Cybercrime, IoT Security, Usable Security", 
+  "sungjuR":  "Cryptography, System Security, Program Analysis", 
+  "dahyeR":  "Medical AI, Multimodal Learning",
+  "jiwonR":  "Medical AI", 
+  "jungminR":  "Network Security", 
+  "chengR":  "Internet Security", 
+  "lixiangR":  "Network Security", 
+  "yonghyunR":  "Rehabilitation Robotics with AI",  
+  "geonheeR":  "System Security, Side-Channel Analysis", 
+  "hoonR":  "Drone Security, IoT Security", 
+  "minjaeR":  "Network Security",
+  "nahyunR":  "AI Security"
 }

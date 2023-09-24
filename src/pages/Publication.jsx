@@ -111,5 +111,5 @@ const BasicBox = styled.div`
 
 
 const Orange = styled.p`
-  color: ${({theme}) => theme.mode === 'light' ? '#3E53BF' : 'orange'}; 
+  color: ${({theme}) => theme.link}; 
 `;

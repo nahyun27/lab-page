@@ -15,7 +15,7 @@ function Footer() {
             <p>Hanyang Univ. 0000 Lab</p> 
             <p>한양대학교 인공지능 보안 연구실 </p> 
             <p>yeonjoonlee@hanyang.ac.kr</p>
-            <p>Copyright © 2023 0000 Lab All rights reserved </p>
+            <p>Copyright © 2023 ICY Lab All rights reserved </p>
           </div>
         </div>
         <div className='logos'>
