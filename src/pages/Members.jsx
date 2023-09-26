@@ -11,7 +11,7 @@ import jiwon from 'assets/members/jiwon.jpeg';
 import sungju from 'assets/members/sungju.png';
 import sungbin from 'assets/members/sungbin.png';
 import geonhee from 'assets/members/geonhee.png';
-import lixiang from 'assets/members/lixiang.jpeg';
+import lixiang from 'assets/members/lixiang.png';
 import dahye from 'assets/members/dahye.jpeg';
 import hoon from 'assets/members/hoon.png';
 import minjae from 'assets/members/minjae.jpeg';
@@ -30,7 +30,7 @@ function Members ({ toggle, mode }) {
       "name": "gagyeom",
       "image": gagyeom,
       "email": 'rkrua5283@hanyang.ac.kr',
-      "mbti": '404',
+      "mbti": 'ISFJ',
       "interest": 'gagyeomR',
     }, 
     {

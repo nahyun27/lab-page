@@ -28,7 +28,7 @@ export default LangChange;
 const LangWapper = styled.button`
   z-index: 999999;
   cursor: pointer;
-  width: 45px;
+  // width: 45px;
   background-color: transparent;
   border-width: 0;
   font-weight: 700;
@@ -37,5 +37,5 @@ const LangWapper = styled.button`
   margin-right: -20px;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 24px;
 `;

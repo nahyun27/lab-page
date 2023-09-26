@@ -14,7 +14,7 @@ const Backdrop = styled("div")`
 
 const ModifyModal = styled(Modal)`
   position: fixed;
-  width: 60%;
+  width: max-content;
   max-height: 80%;
   z-index: 1040;
   top: 50%;

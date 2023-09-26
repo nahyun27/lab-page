@@ -1,14 +1,17 @@
 {
-  "option": "E",
-  "labName": "ICY Lab",
-  "labName2": "Hanyang AI & Cyber Security Lab",
+  "option": "한글",
+  "labName": "ACE Lab",
+  "labName2": "Hanyang AI & Cyber SEcurity Lab",
   "Home": "Home",
   "Research": "Research",
   "Members": "Members",
   "Publications": "Publications",
   "Contact": "Contact",
+  "Gallery": "Gallery",
+  "gal1": "Curious about our lab, where innovative ideas thrive?",
+  "gal2": "We'll give you a sneak peek into our daily life at the lab!",
 
-  "welcome": "Welcome to ICY Lab!",
+  "welcome": "Welcome to ACE Lab!",
   "intro1": "Our research endeavors are aimed at addressing complex security issues",
   "intro2": "and enhancing cybersecurity in an ever-evolving digital landscape.",
   "recruitingTitle": "[Computer Science/Artificial Intelligence] Research Assistant Positions Available",
@@ -39,7 +42,7 @@
 
   "yeonjoon":  "Yeonjoon Lee",
   "profDesc1":  "Assistant Professor, Hanyang university ERICA",
-  "profDesc2":  "PhD in Security Informatics in Indiana University Bloomingtone",
+  "profDesc2":  "PhD in Security Informatics in Indiana University Bloomington",
 
   "gagyeom":  "Gagyeom Kim", 
   "sungbin":  "Sungbin Park", 

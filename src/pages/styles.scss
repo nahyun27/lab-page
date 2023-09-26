@@ -1,3 +1,59 @@
+.register_modal_header {
+  background-color: #292c3a;
+  width: 100%;
+  padding: 15px 0px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: sticky;
+  top:0;
+  z-index: 5;
+}
+.register_modal_header h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+}
+.info p {
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+.cancel_btn {
+  padding: 20px 40px;
+  font-size: 1.5em;
+  width: 100%;
+  font-weight: 600;
+  background-color: #8b8b8b;
+  border: none;
+  cursor: pointer;
+  color:white;
+
+}
+.register_btn {
+  padding: 20px 40px;
+  font-size: 1.5em;
+  width: 100%;
+  font-weight: 600;
+  background-color: #3982ff;
+  border: none;
+  cursor: pointer;
+  color:white;
+}
+.register_btn_box {
+  display: flex;
+  flex-direction: row;
+
+}
+
 
 .row-box {
   display: flex;
@@ -288,6 +344,34 @@
   }
 }
 
+
+.Gallery {
+  padding-bottom: 200px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .cardCover {
+    width: 400px;
+    overflow: hidden;
+    border-width: 0;
+  
+    .card {
+      align-items: center;
+      width: 400px;
+      height: 400px;
+      object-fit: cover; 
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+  .cardBox {
+    height: max-content;
+    margin: 30px 30px;
+  }
+}
 
 .Contact {
   padding-bottom: 200px;

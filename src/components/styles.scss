@@ -1,5 +1,5 @@
 .Footer {
-  background-color: #404345;
+  background-color: #303234;
   color: #b4b5be;
   padding: 100px 0;
   display: flex;
@@ -26,6 +26,7 @@
     }
   }
 }
+
 .logo {
   height: 70px;
   pointer-events: none;
@@ -36,14 +37,15 @@
   margin-left: 10px;
   .name {
     font-size: 1.3em;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   .desc {
     pointer-events: none;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 400;
     color: #888;
+    margin-top: 6px;
   }
 }
 
@@ -240,7 +242,7 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
   transform: translateY(-50%) rotate(-45deg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   input[id="menuicon"] + label {
     right: 5%;
   }
@@ -311,7 +313,6 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
 
 .sidebar__menu li {
   font-size: 1.3em;
-  
   padding: 10px;
   text-align: center;
   display: flex;
@@ -340,4 +341,22 @@ input[id="menuicon"] + label span {
   border-radius: 30px;
   // background: #000;
   transition: all 0.35s;
+}
+
+.card-list {
+  padding: 20px 30px;
+  .card {
+    width: 1300px;
+    margin: 20px 0;
+    border-radius: 20px;
+    padding: 30px 40px;
+    p {
+      display: inline;
+      font-size: 1.6em;
+      line-height: 35px;
+    }
+    .paper-link {
+      cursor: pointer;
+    }
+  }
 }

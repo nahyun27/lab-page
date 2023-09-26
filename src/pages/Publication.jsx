@@ -2,8 +2,11 @@ import './styles.scss';
 import React, {useState} from "react"
 import styled from 'styled-components';
 import { FormattedMessage } from "react-intl";
+import {Backdrop, ModifyModal} from 'components/ModifyModal';
 
 function Publication ({ toggle, mode }) {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const renderBackdrop = (props) => <Backdrop {...props} />;
   const [imgLoading, setImgLoading] = useState(true);
   const data = [
     {
@@ -12,6 +15,7 @@ function Publication ({ toggle, mode }) {
       "conference": 'Accepted in the UbiComp 2020 / ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2020.',
       "link": 'http://yeonjoonlee.com/publication/2020speakersonar/',
       "pdf": '',
+      "selected": false,
     }, 
     {
       "author": "Yeonjoon Lee, Xueqiang Wang, Xiaojing Liao, XiaoFeng Wang.",
@@ -19,6 +23,7 @@ function Publication ({ toggle, mode }) {
       "conference": 'Accepted in the IEEE Transactions on Dependable and Secure Computing (TDSC), 2019.',
       "link": 'http://yeonjoonlee.com/publication/2019chameleon/',
       "pdf": '',
+      "selected": false,
     }, 
     {
       "author": "Yeonjoon Lee, Xueqiang Wang, Kwangwuk Lee, Xiaojing Liao, XiaoFeng Wang,Tongxin Li, Xianghang Mi.",
@@ -26,6 +31,7 @@ function Publication ({ toggle, mode }) {
       "conference": 'In USENIX Security, 2019.',
       "link": 'http://yeonjoonlee.com/publication/2019crowdturfing/',
       "pdf": '',
+      "selected": false,
     }, 
     {
       "author": "Yeonjoon Lee, Yue Zhao, Jiutian Zeng, Kwangwuk Lee, Nan Zhang, Faysal Hossain Shezan, Yuan Tian, Kai Chen, XiaoFeng Wang.",
@@ -33,6 +39,7 @@ function Publication ({ toggle, mode }) {
       "conference": 'Accepted in the UbiComp 2020 / ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2020.',
       "link": 'http://yeonjoonlee.com/publication/2020speakersonar/',
       "pdf": '',
+      "selected": false,
     }, 
     {
       "author": "Yeonjoon Lee, Yue Zhao, Jiutian Zeng, Kwangwuk Lee, Nan Zhang, Faysal Hossain Shezan, Yuan Tian, Kai Chen, XiaoFeng Wang.",
@@ -40,6 +47,7 @@ function Publication ({ toggle, mode }) {
       "conference": 'Accepted in the UbiComp 2020 / ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2020.',
       "link": 'http://yeonjoonlee.com/publication/2020speakersonar/',
       "pdf": '',
+      "selected": false,
     }, 
     {
       "author": "Yeonjoon Lee, Yue Zhao, Jiutian Zeng, Kwangwuk Lee, Nan Zhang, Faysal Hossain Shezan, Yuan Tian, Kai Chen, XiaoFeng Wang.",
@@ -47,6 +55,7 @@ function Publication ({ toggle, mode }) {
       "conference": 'Accepted in the UbiComp 2020 / ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2020.',
       "link": 'http://yeonjoonlee.com/publication/2020speakersonar/',
       "pdf": '',
+      "selected": false,
     }, 
     {
       "author": "Yeonjoon Lee, Yue Zhao, Jiutian Zeng, Kwangwuk Lee, Nan Zhang, Faysal Hossain Shezan, Yuan Tian, Kai Chen, XiaoFeng Wang.",
@@ -54,6 +63,7 @@ function Publication ({ toggle, mode }) {
       "conference": 'Accepted in the UbiComp 2020 / ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2020.',
       "link": 'http://yeonjoonlee.com/publication/2020speakersonar/',
       "pdf": '',
+      "selected": false,
     }, 
   ]
 
@@ -82,6 +92,7 @@ function Publication ({ toggle, mode }) {
       <div className="title-box">
         <h1><FormattedMessage id="publications" /></h1>
       </div>
+      
       <div className="card-list">
         {data.map((d, idx) => (
           <BasicBox className="card">
@@ -91,8 +102,32 @@ function Publication ({ toggle, mode }) {
           </BasicBox>
           ))
           }
-          <p className='more'>see more ▶</p>
+          <p onClick={() => setIsModalVisible(true)} className='more'>see more ▶</p>
       </div>
+
+      <ModifyModal
+        show={isModalVisible}
+        onHide={() => setIsModalVisible(false)}
+        backdrop={true}
+        renderBackdrop={renderBackdrop}
+      >
+      <GrayBox>
+        <div className="register_modal_header">  
+          <h2><FormattedMessage id="publications" /></h2>
+        </div>
+          <div className="card-list">
+          {data.map((d, idx) => (
+            <BasicBox className="card">
+              <p>{highlightText(d.author, 'Yeonjoon Lee')}</p>
+              <Orange className='paper-link' onClick={()=>{window.open(d.link)}} >{d.title}</Orange>
+              <p>{d.conference}</p>
+            </BasicBox>
+            ))
+            }
+        </div>
+      </GrayBox>
+      </ModifyModal>
+
     </GrayBox>
   );
 }
@@ -108,7 +143,6 @@ const GrayBox = styled.div`
 const BasicBox = styled.div`
   background-color: ${({theme}) => theme.backgroundColor}; 
 `;
-
 
 const Orange = styled.p`
   color: ${({theme}) => theme.link}; 

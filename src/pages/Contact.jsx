@@ -32,5 +32,5 @@ export default Contact;
 
 
 const Background = styled.div`
-  background-color: ${props => props.theme.backgroundColor};
+  background-color: ${props => props.theme.bgColor};
 `;
