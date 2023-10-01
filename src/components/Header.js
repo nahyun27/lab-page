@@ -20,7 +20,7 @@ function Header({ toggle, mode }) {
               <img src={mode === 'light' ? logoB: logoW} className="logo banselect" alt="logo" />
               <div className="name-box">
                 <p className="name banselect" ><FormattedMessage id="labName"/></p>
-                <p className="desc" >Hanyang <Text>A</Text>I & <Text>C</Text>yber S<Text>E</Text>curity Lab</p>
+                <p className="desc" >Hanyang <Texts>A</Texts>I & <Texts>C</Texts>yber S<Texts>E</Texts>curity Lab</p>
                 {/* <p className="desc banselect" ><FormattedMessage id="labName2"/></p> */}
               </div>
             </div>
@@ -32,19 +32,17 @@ function Header({ toggle, mode }) {
                 <Link to="Publication" spy={true} smooth={true}><li><FormattedMessage id="Publications"/></li></Link>
                 <Link to="Gallery" spy={true} smooth={true}><li><FormattedMessage id="Gallery"/></li></Link>
                 <Link to="Contact" spy={true} smooth={true}><li><FormattedMessage id="Contact"/></li></Link>
-                <li><LangChange></LangChange></li>
-                <li><ThemeToggle toggle={toggle} mode={mode}></ThemeToggle></li>
+                <li className='noMargin'><LangChange></LangChange></li>
+                <li className='noMargin'><ThemeToggle toggle={toggle} mode={mode}></ThemeToggle></li>
               </ul>
 
             <input type="checkbox" id="menuicon"/>
             <label htmlFor="menuicon">
-              <Text>
+              <Ham></Ham>
               <span></span>
               <span></span>
-              <span></span>
-              </Text>
             </label>
-            <div className="sidebar">
+            <GrayBox className="sidebar">
                 <ul className="sidebar__menu">
                   <Link to="Home" spy={true} smooth={true}><li><FormattedMessage id="Home"/></li></Link>
                   <Link to="Research" spy={true} smooth={true}><li><FormattedMessage id="Research"/></li></Link>
@@ -52,8 +50,10 @@ function Header({ toggle, mode }) {
                   <Link to="Publication" spy={true} smooth={true}><li><FormattedMessage id="Publications"/></li></Link>
                   <Link to="Gallery" spy={true} smooth={true}><li><FormattedMessage id="Gallery"/></li></Link>
                   <Link to="Contact" spy={true} smooth={true}><li><FormattedMessage id="Contact"/></li></Link>
+                  <li><LangChange></LangChange></li>
+                  <li><ThemeToggle toggle={toggle} mode={mode}></ThemeToggle></li>
                 </ul>
-            </div>
+            </GrayBox>
           </nav>
         </div>
       </BasicBox>
@@ -76,8 +76,12 @@ const Orange = styled.p`
 `;
 
 
-const Text = styled.p`
-  color: ${({theme}) => theme.textColor}; 
+const Texts = styled.div`
+  color: ${({theme}) => theme.textColor} !important; 
   font-weight: 600;
   display: inline-block;
+`;
+
+const Ham = styled.span`
+  color: ${({theme}) => theme.textColor} !important;
 `;

@@ -10,7 +10,8 @@ import nahyun from 'assets/members/nahyun.png';
 import jiwon from 'assets/members/jiwon.jpeg';
 import sungju from 'assets/members/sungju.png';
 import sungbin from 'assets/members/sungbin.png';
-import geonhee from 'assets/members/geonhee.png';
+import gunhee from 'assets/members/gunhee.png';
+import gunheeB from 'assets/members/gunheeB.jpeg';
 import lixiang from 'assets/members/lixiang.png';
 import dahye from 'assets/members/dahye.jpeg';
 import hoon from 'assets/members/hoon.png';
@@ -18,17 +19,21 @@ import minjae from 'assets/members/minjae.jpeg';
 import cheng from 'assets/members/cheng.jpeg';
 import gagyeom from 'assets/members/gagyeom.jpeg';
 import yonghyun from 'assets/members/yonghyun.jpeg';
+import yonghyunB from 'assets/members/yonghyunB.png';
 import jungmin from 'assets/members/jungmin.png';
+import jungminB from 'assets/members/jungminB.png';
 import styled from 'styled-components';
 import user from 'assets/user.png';
 
 function Members ({ toggle, mode }) {
-  const [imgLoading, setImgLoading] = useState(true);
+  const [isListHover, setIsListHover] = useState(false);
+  const [number, setNumber] = useState(-1);
   const homepageUrl = "http://yeonjoonlee.com/"
   const phds = [
     {
       "name": "gagyeom",
       "image": gagyeom,
+      "imageB": gagyeom,
       "email": 'rkrua5283@hanyang.ac.kr',
       "mbti": 'ISFJ',
       "interest": 'gagyeomR',
@@ -36,6 +41,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "sungbin",
       "image": sungbin,
+      "imageB": sungbin,
       "email": 'pbt98@hanyang.ac.kr',
       "mbti": 'ENFJ',
       "interest": 'sungbinR',
@@ -43,6 +49,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "sungju",
       "image": sungju,
+      "imageB": sungju,
       "email": 'tjdwn77777@hanyang.ac.kr',
       "mbti": 'MATH',
       "interest": 'sungjuR',
@@ -50,6 +57,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "dahye",
       "image": dahye,
+      "imageB": dahye,
       "email": 'dahyesong99@hanyang.ac.kr',
       "mbti": 'ISTJ',
       "interest": 'dahyeR',
@@ -59,6 +67,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "jiwon",
       "image": jiwon,
+      "imageB": jiwon,
       "email": 'jwhero12@hanyang.ac.kr',
       "mbti": 'ESFJ',
       "interest": 'jiwonR',
@@ -66,6 +75,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "jungmin",
       "image": jungmin,
+      "imageB": jungminB,
       "email": 'lsmp12@hanyang.ac.kr',
       "mbti": 'ISFJ',
       "interest": 'jungminR',
@@ -73,6 +83,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "cheng",
       "image": cheng,
+      "imageB": cheng,
       "email": 'zyc0928@hanyang.ac.kr',
       "mbti": 'ESFP',
       "interest": 'chengR',
@@ -80,6 +91,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "lixiang",
       "image": lixiang,
+      "imageB": lixiang,
       "email": 'lx913247225@hanyang.ac.kr',
       "mbti": 'ENFP',
       "interest": 'lixiangR',
@@ -87,20 +99,23 @@ function Members ({ toggle, mode }) {
     {
       "name": "yonghyun",
       "image": yonghyun,
+      "imageB": yonghyunB,
       "email": 'yonghyunlee@hanyang.ac.kr',
       "mbti": 'ENTP',
       "interest": 'yonghyunR',
     }, 
     {
-      "name": "geonhee",
-      "image": geonhee,
+      "name": "gunhee",
+      "image": gunhee,
+      "imageB": gunheeB,
       "email": 'ksknh7@hanyang.ac.kr',
       "mbti": 'ICBM',
-      "interest": 'geonheeR',
+      "interest": 'gunheeR',
     }, 
     {
       "name": "hoon",
       "image": hoon,
+      "imageB": hoon,
       "email": 'yujihoon89@hanyang.ac.kr',
       "mbti": 'INFP',
       "interest": 'hoonR',
@@ -108,6 +123,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "minjae",
       "image": minjae,
+      "imageB": minjae,
       "email": 'minjae0110@hanyang.ac.kr',
       "mbti": 'ENTP',
       "interest": 'minjaeR',
@@ -115,6 +131,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "nahyun",
       "image": nahyun,
+      "imageB": nahyun,
       "email": 'ksknh7@hanyang.ac.kr',
       "mbti": 'ENTJ',
       "interest": 'nahyunR',
@@ -163,7 +180,10 @@ function Members ({ toggle, mode }) {
         <div className='container'>
           {masters.map((m, idx) => (
             <div className='item'>
-              <img className='profile' src={m.image} alt="" />
+              <img  
+              onMouseOver={() => {setIsListHover(true); setNumber(idx)}}
+              onMouseOut={() => setIsListHover(false)}
+              className='profile' src={isListHover && number == idx? m.imageB : m.image} alt="" />
               <p className='name'><FormattedMessage id={m.name} /></p>
               <p className='email'>{m.email}</p>
               {/* <p className='email'>{m.mbti}</p>
@@ -213,55 +233,21 @@ const Container = styled.div`
     width: max-content !important;
   }
   .tooltip {
-    white-space: pre-line;
-    display: none;
-    position: absolute;
-    bottom: -20%;
-    left: 50%;
     background-color: ${({theme}) => theme.tipB}; 
     border: #7689fd solid 2px;
     border-color: ${({theme}) => theme.tipBr}; 
     border-radius: 15px;
-    color: ${({theme}) => theme.tipBr}; 
-    font-size: 1.2em;
-    font-weight: 500;
-    height: auto;
-    width: max-content;
-    letter-spacing: -0.25px;
-    margin-top: 9px;
-    padding: 10px 13px;
-    text-align: center;
-    z-index: 100;
-    transform: translate(-44%, 110%);
+    color: ${({theme}) => theme.tipBr};
   }
 
 // 말풍선 테두리와 꼬리를 위한 before, after
   .tooltip::after {
     border-color:  ${({theme}) => theme.tipBack}; 
-    border-style: solid;
-    border-width: 0 6px 8px 6.5px;
-    content: "";
-    display: block;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: -6px;
-    width: 0;
-    z-index: 1;
   }
 
   .tooltip::before {
     border-color: ${({theme}) => theme.tipBorder}; 
-    border-style: solid;
-    border-width: 0 6px 8px 6.5px;
-    content: "";
-    display: block;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: -10px;
-    width: 0;
-    z-index: 0;
+
   }
 `;
 

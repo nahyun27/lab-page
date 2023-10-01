@@ -18,11 +18,6 @@ function Footer() {
             <p>Copyright © 2023 ACE Lab All rights reserved </p>
           </div>
         </div>
-        <div className='logos'>
-          <img className='logo' src='' alt="" />
-          <img className='logo' src="" alt="" />
-          <img className='logo' src="" alt="" />
-        </div>
       </div>
     </div>
   );

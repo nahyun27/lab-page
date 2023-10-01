@@ -24,7 +24,7 @@ function Home() {
           <p><FormattedMessage id="recruitingDesc" /></p>
         </div>
       </GrayBox>
-      <Link to="Contact" spy={true} smooth={true}><button className='contact_button'><FormattedMessage id="button" /></button></Link>
+      <Link to="Contact" spy={true} smooth={true}><PointBox className='contact_button'><FormattedMessage id="button" /></PointBox></Link>
     </div>
   );
 }
@@ -33,4 +33,8 @@ export default Home;
 
 const GrayBox = styled.div`
   background-color: ${({theme}) => theme.bgColor}; 
+`;
+
+const PointBox = styled.button`
+  background-color: ${({theme}) => theme.pointColor}; 
 `;

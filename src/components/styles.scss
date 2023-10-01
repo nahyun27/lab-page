@@ -27,6 +27,68 @@
   }
 }
 
+
+.containerG {
+  width: 400px;
+  height: 400px;
+  .slick-slide div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .slick-dots {
+    margin-top: 30px;
+    button::before {
+      color: #888;
+    }
+  }
+  .slick-prev, .slick-next {
+    font-size: 15px !important;
+  }
+  
+  .slick-prev:before, .slick-next:before  {
+    content: '' !important;
+  }
+  .slick-dots {
+    text-align: center;
+  }
+  
+  .slick-dots li {
+    display: inline-block; /* li 요소들을 가로로 표시합니다. */
+    margin: 0 5px; /* 각각의 li 요소 사이의 간격을 조절합니다. */
+    padding: 0; /* 불필요한 패딩을 제거합니다. */
+    list-style: none; /* 리스트 마커를 제거합니다. */
+  }
+}
+
+.card-list {
+  padding: 20px 30px;
+  .card {
+    width: 1300px;
+    margin: 20px 0;
+    border-radius: 20px;
+    padding: 30px 40px;
+    p {
+      display: inline;
+      font-size: 1.6em;
+      line-height: 35px;
+    }
+    .paper-link {
+      cursor: pointer;
+    }
+  }
+}
+
+.map {
+  width: 1000px;
+  height: 540px;
+  z-index: 0;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .logo {
   height: 70px;
   pointer-events: none;
@@ -109,91 +171,11 @@
   color: #3E53BF;
 }
 
-@media screen and (max-width: 1650px) {
-  .Footer {
-    padding: 70px 0;
-    flex-direction: row;
-    justify-content: flex-start;
-    .contents_root {
-      display: flex;
-      flex-direction: row;
-      width: auto;
-      margin-left: 100px;
-    }
-  }
-}
 
-
-
-@media screen and (max-width: 1280px) {
-  .navbar {
-    padding: 0 40px;
-  }
-  .logo-writing {
-    font-size: 1.2em;
-  }
-  .navbar__menu li {
-    margin-left: 10px !important;
-    font-size: 1.3em;
-    cursor: pointer;
-  }
-  
-  .logo {
-    height: 60px;
-  }
-
-  .name-box {
-    margin-left: 10px;
-    .name {
-      font-size: 1.2em;
-      font-weight: 700;
-    }
-
-    .desc {
-      pointer-events: none;
-      font-size: 0.7em;
-      font-weight: 400;
-      color: #888;
-    }
-  }
-
-}
-
-@media screen and (max-width: 800px) {
-  
-  .Footer {
-    .contents_root {
-      p {
-        font-size: 1.5em;
-        font-weight: 700;
-      }
-      .infos {
-        margin-top: 20px;
-        p {
-          line-height: 30px;
-          font-size: 1.3em;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-
-  .navbar {
-    height: 70px;
-    padding: 0 20px;
-  }
-  .logo {
-    height: 50px;
-  }
-  
-  .logo-writing {
-    height: 35px;
-    font-size: 1.2em;
-    padding-top: 3px;
-    margin-left: 6px;
-  }
-  .navbar__menu {
-    display: none;
+.sidebar__menu { 
+  .active li{ 
+    background-color: #e1e6ec;
+    color: #3E53BF;
   }
 }
 
@@ -242,56 +224,9 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
   transform: translateY(-50%) rotate(-45deg);
 }
 
-@media screen and (max-width: 800px) {
-  input[id="menuicon"] + label {
-    right: 5%;
-  }
-
-  .Footer {
-    padding: 5% 10%;
-    .contents_root {
-      p {
-        height: 50px;
-        font-size: 1.4em;
-        font-weight: 700;
-      }
-      .infos {
-        margin-top: 20px;
-        p {
-          height: auto;
-          margin: 10px 0;
-          font-size: 1.1em;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-}
-
-
-@media all and (max-width: 550px) {
-  .Footer {
-    padding: 5% 10%;
-    .contents_root {
-      p {
-        height: 50px;
-        font-size: 1.4em;
-        font-weight: 700;
-      }
-      .infos {
-        margin-top: 20px;
-        p {
-          font-size: 1em;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-}
-
 .sidebar {
   width: 230px;
-  height: auto;
+  height: 100vh;
   background-color: #fff;
   position: fixed;
   top: 0%;
@@ -313,11 +248,13 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
 
 .sidebar__menu li {
   font-size: 1.3em;
-  padding: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
   text-align: center;
   display: flex;
   list-style: none;
-  padding-left: 0;
 }
 
 .sidebar__menu li :hover {
@@ -339,24 +276,233 @@ input[id="menuicon"] + label span {
   width: 100%;
   height: 3px;
   border-radius: 30px;
-  // background: #000;
+  background: #757575;
   transition: all 0.35s;
 }
 
-.card-list {
-  padding: 20px 30px;
-  .card {
-    width: 1300px;
-    margin: 20px 0;
+
+.noMargin {
+  padding: 0 !important;
+  padding-left: 10px !important;
+}
+
+@media screen and (max-width: 1650px) {
+  .Footer {
+    padding: 70px 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    .contents_root {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      margin-left: 100px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1280px) {
+  .Header {
+    .noMargin {
+      padding: 0 !important;
+      padding-left: 5px !important;
+    }
+    .navbar {
+      padding: 0 40px;
+      .logo-writing {
+        font-size: 1.2em;
+      }
+      .navbar__menu li {
+        margin-left: 1px !important;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+      
+      .logo {
+        height: 50px;
+      }
+      .name-box {
+        margin-left: 0px;
+        .name {
+          font-size: 0px;
+        }
+        .desc {
+          font-size: 0px;
+          line-height: 0px;
+          // font-size: 0.7em;
+        }
+      }
+    }
+  }
+
+  .map {
+    width: 700px;
+    height: 540px;
+    z-index: 0;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+    
+  .card-list {
+    padding: 20px 30px;
+    .card {
+      width: 700px;
+      border-radius: 20px;
+      padding: 20px 30px;
+      p {
+        font-size: 1.3em;
+        line-height: 30px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  input[id="menuicon"] + label {
+    right: 5%;
+  }
+  .map {
+    width: 500px;
+    height: 540px;
+    z-index: 0;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+    
+  .card-list {
+    padding: 20px 30px;
+    .card {
+      width: 500px;
+      border-radius: 20px;
+      padding: 20px 25px;
+      p {
+        font-size: 1.2em;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .Footer {
+    .contents_root {
+      p {
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+      .infos {
+        margin-top: 20px;
+        p {
+          line-height: 30px;
+          font-size: 1.3em;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    height: 70px;
+    padding: 0 20px;
+  }
+  .logo {
+    height: 50px;
+  }
+  
+  .logo-writing {
+    height: 35px;
+    font-size: 1.2em;
+    padding-top: 3px;
+    margin-left: 6px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .containerG {
+    width: 150px;
+    height: 150px;
+    margin: -20px;
+    margin-bottom: 20px;
+    .slick-slide div {
+      margin-bottom: 10px;
+    }
+    .slick-dots {
+      margin-top: 30px;
+      button::before {
+        color: #888;
+      }
+    }
+    .slick-prev, .slick-next {
+      font-size: 15px !important;
+    }
+    
+    .slick-prev:before, .slick-next:before  {
+      content: '' !important;
+    }
+    .slick-dots {
+      text-align: center;
+    }
+    
+    .slick-dots li {
+      display: inline-block; /* li 요소들을 가로로 표시합니다. */
+      margin: 0 1px; /* 각각의 li 요소 사이의 간격을 조절합니다. */
+      padding: 0; /* 불필요한 패딩을 제거합니다. */
+      list-style: none; /* 리스트 마커를 제거합니다. */
+    }
+  }
+  input[id="menuicon"] + label {
+    right: 5%;
+  }
+  .map {
+    width: 300px;
+    height: 340px;
     border-radius: 20px;
-    padding: 30px 40px;
-    p {
-      display: inline;
-      font-size: 1.6em;
-      line-height: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+    
+  .card-list {
+    padding: 20px 30px;
+    .card {
+      width: 300px;
+      border-radius: 20px;
+      padding: 20px 25px;
+      p {
+        font-size: 1em;
+        line-height: 20px;
+      }
     }
-    .paper-link {
-      cursor: pointer;
+  }
+
+  .Footer {
+    .contents_root {
+      margin-left: 40px;
+      p {
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+      .infos {
+        margin-top: 20px;
+        p {
+          line-height: 30px;
+          font-size: 1.3em;
+          font-weight: 400;
+        }
+      }
     }
+  }
+
+  .navbar {
+    height: 60px;
+    padding: 0 20px;
+  }
+  .logo {
+    height: 40px;
   }
 }

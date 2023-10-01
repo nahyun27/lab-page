@@ -47,11 +47,9 @@ function Gallery() {
 
       <div className='row-box'>
         <div className='cardBox'>
-          {/* <h2> Single Item</h2> */}
           <CardSlider photos={photos3}/>
         </div>
         <div className='cardBox'>
-          {/* <h2> Single Item</h2> */}
           <CardSlider photos={photos4}/>
         </div>
       </div>

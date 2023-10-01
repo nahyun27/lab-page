@@ -14,4 +14,5 @@ export const GlobalStyle = createGlobalStyle`
   span{
 		background: ${({theme}) => theme.span}; 
   }
+
 `;

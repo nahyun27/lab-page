@@ -55,7 +55,7 @@ export default function CardSlider({photos}) {
   };
 
   return (
-    <Container>
+    <Container className='containerG'>
       <Slider {...settings}>
 				{photos.map((p) =>(
           <div className='cardCover'>
@@ -68,30 +68,12 @@ export default function CardSlider({photos}) {
 }
 
 const Container = styled.div`
-	width: 400px;
-  height: 400px;
-  .slick-slide div { //슬라이더  컨텐츠
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
   .slick-dots {
-    margin-top: 30px;
     .slick-active {
       button::before {
         color: ${({theme}) => theme.textColor}; 
       }
     }
-    button::before {
-      color: #888;
-    }
   }
-  .slick-prev, .slick-next {
-    font-size: 15px !important;
-    }
-    
-    .slick-prev:before, .slick-next:before  {
-    content: '' !important;
-    }
+  
 `;

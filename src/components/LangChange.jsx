@@ -34,8 +34,10 @@ const LangWapper = styled.button`
   font-weight: 700;
   display: flex;
   color: ${({theme}) => theme.textColor}; 
-  margin-right: -20px;
+  // margin-right: -20px;
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  margin: 0;
+  padding: 0;
 `;

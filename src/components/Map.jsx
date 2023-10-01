@@ -35,14 +35,7 @@ const Map = () => {
     <div
       id="map"
       ref={mapContainer}
-      style={{
-          width: '1000px',
-          height: '540px',
-          zIndex:0,
-          borderRadius: '30px',
-          marginTop: '50px',
-          marginBottom: '30px',
-        }}
+      className='map'
     ></div>
   );
 };
