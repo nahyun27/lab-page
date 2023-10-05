@@ -124,6 +124,7 @@ function Publication ({ toggle, mode }) {
     <GrayBox className="Publication">
       <div className="title-box">
         <h1><FormattedMessage id="publications" /></h1>
+        {/* <p><FormattedMessage id="gub1" /></p> */}
       </div>
       
       <div>

@@ -12,8 +12,8 @@
 }
 .register_modal_header h2 {
   color: white;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 .info {
@@ -23,7 +23,7 @@
   padding: 40px;
 }
 .info p {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-top: 10px;
 }
 
@@ -52,15 +52,15 @@
   align-items: center;
   justify-content: center;
   h1 {
-    font-size: 3.6em;
-    font-weight: 800;
+    font-size: 3.3em;
+    font-weight: bold;
     margin-bottom: 30px;
   }
   p {
     text-align: center;
     width: 1200px;
-    font-size: 1.7em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 500;
     line-height: 40px;
   }
 }
@@ -77,7 +77,7 @@
   }
   h1 {
     text-align: center;
-    font-weight: 800;
+    font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -106,14 +106,14 @@
       object-fit: cover;
     }
     p {
-      font-size: 1.4em;
-      font-weight: 600;
+      font-size: 1.2em;
+      font-weight: normal;
       line-height: 40px;
       text-align: left;
     }
     .title {
-      font-size: 1.8em;
-      font-weight: 900;
+      font-size: 1.6em;
+      font-weight: 500;
       text-align: left;
       margin-bottom: 10px;
     }
@@ -127,9 +127,9 @@
     border-radius: 100px;
     border-width: 0;
     color: #fff;
-    font-weight: 700;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 }
 .home .icon:hover {
@@ -146,8 +146,8 @@
   }
   padding-top: 40px;
   h1 {
-    font-size: 3.5em;
-    font-weight: 800;
+    font-size: 3.3em;
+    font-weight: bold;
     margin-bottom: 50px;
   }
   .home {
@@ -163,15 +163,15 @@
     justify-content: center;
     .name {
       margin-top: 20px;
-      font-size: 2.4em;
+      font-size: 2.2em;
       margin-right: 10px;
-      font-weight: 700;
+      font-weight: bold;
     }
     .desc {
       margin-top: 20px;
       justify-content: center;
       text-align: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       line-height: 35px;
       margin-bottom: 30px;
     }
@@ -186,8 +186,8 @@
     justify-content: center;
 
     h1 {
-      font-size: 3em;
-      font-weight: 800;
+      font-size: 2.6em;
+      font-weight: bold;
       margin-bottom: 50px;
     }
 
@@ -203,34 +203,34 @@
       // grid-auto-rows: 100px; /* 그 외(암시적) 행의 크기 정의 */
       justify-content: center;
       .item {
-        margin-bottom: 40px;
+        margin-bottom: 45px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         .name {
           margin-top: 20px;
-          font-weight: 700;
-          font-size: 1.8em;
+          font-weight: bold;
+          font-size: 1.6em;
         }
         .email {
           margin-top: 5px;
           line-height: 35px;
-          font-size: 1.3em;
+          font-size: 1.1em;
         }
         .mbti {
-          margin-top: 2px;
-          font-size: 1.2em;
-          font-weight: 700;
+          margin-top: 5px;
+          font-size: 1em;
+          font-weight: bold;
           border-radius: 4px;
           cursor: pointer;
           padding: 6px 12px;
         }
         .interest {
-          margin-top: 2px;
+          margin-top: 5px;
           margin-left: 10px;
-          font-size: 1.2em;
-          font-weight: 700;
+          font-size: 1em;
+          font-weight: bold;
           border-radius: 4px;
           cursor: pointer;
           padding: 6px 12px;
@@ -246,7 +246,7 @@
     bottom: -20%;
     line-height: 22px;
     left: 50%;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     height: auto;
     width: max-content;
@@ -297,7 +297,7 @@
   .card {
     box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
     width: 350px;
-    height: 570px;
+    height: max-content;
     border-radius: 20px;
     padding: 30px 40px;
     margin: 0 10px;
@@ -307,15 +307,18 @@
     flex-direction: column;
     align-items: center;
     p {
-      font-size: 1.5em;
+      font-size: 1.6em;
       margin-top: 20px;
       text-align: center;
       line-height: 35px;
+      height: 300px;
+      flex-direction: column;
+      justify-content: center;
     }
     
     h1 {
       font-size: 2em;
-      font-weight: 700;
+      font-weight: bold;
       margin-bottom: 30px;
     }
     .image {
@@ -347,7 +350,7 @@
     padding: 30px 40px;
     p {
       display: inline;
-      font-size: 1.6em;
+      font-size: 1.4em;
       line-height: 35px;
     }
     .paper-link {
@@ -357,8 +360,8 @@
   .more {
     cursor: pointer;
     color: orange;
-    font-weight: 700;
-    font-size: 1.8em;
+    font-weight: bold;
+    font-size: 1.6em;
     text-align: right;
   }
 }
@@ -410,7 +413,7 @@
     width: 900px;
     margin: 40px 0;
     .info-text {
-      font-size: 1.5em !important;
+      font-size: 1.3em !important;
     }
   }
   .icon {
@@ -424,7 +427,7 @@
     background-color: #ffffff7a;
     border: #3E53BF 1px solid;
     margin-top: 50px;
-    font-weight: 700;
+    font-weight: bold;
   }
   .title {
     color: #000,
@@ -432,28 +435,23 @@
 }
 
 .top__contents {
-  font-size: 1em;
+  font-size: 0.8em;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .sub-text {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: normal;
   margin-bottom: 20px;
 }
 .main-text {
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 400;
 }
 
-.main-text-goote {
-  font-size: 9em;
-  font-weight: 500;
-}
-
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1450px) {
   .Home {
     padding-top: 130px;
     .blur {
@@ -466,7 +464,7 @@
     
     .intro {
       margin-top: 60px;
-      width: 750px;
+      width: 900px;
       border-radius: 20px;
       padding: 20px 28px;
       
@@ -487,6 +485,33 @@
         text-align: left;
       }
     }
+  }
+  .Research {
+    .card {
+      width: 300px;
+      p {
+        font-size: 1.6em;
+        margin-top: 20px;
+        line-height: 35px;
+        height: 300px;
+      }
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .Home {
+    .intro {
+      margin-top: 60px;
+      width: 750px;
+      border-radius: 20px;
+      padding: 20px 28px;
+    }
 
     .contact_button {
       margin-top: 60px;
@@ -499,67 +524,66 @@
   }
   
 
-
   .title-box {
     margin-top: 120px;
     h1 {
-      font-size: 3em;
-      font-weight: 800;
+      font-size: 2.8em;
+      font-weight: bold;
       margin-bottom: 30px;
     }
     p {
       width: 700px;
-      font-size: 1.4em;
-      font-weight: 600;
+      font-size: 1.3em;
+      font-weight: 500;
       line-height: 35px;
     }
   }
 
-.Research {
-  .top__contents {
-    flex-direction: column;
-    margin-top: 60px;
-    margin-bottom:70px;
-    .card {
-      box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
-      width: 400px;
-      height: 480px;
-      border-radius: 20px;
-      padding: 30px 40px;
-      margin: 0 10px; 
-      margin-bottom: 30px;
-      display: flex;
+  .Research {
+    .top__contents {
       flex-direction: column;
-      align-items: center;
-      p {
-        font-size: 1.3em;
-        margin-top: 20px;
-        text-align: center;
-        line-height: 35px;
-      }
-      
-      h1 {
-        font-size: 2em;
-        font-weight: 700;
+      margin-top: 60px;
+      margin-bottom:70px;
+      .card {
+        box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
+        width: 400px;
+        height: max-content;
+        border-radius: 20px;
+        padding: 30px 40px;
+        margin: 0 10px; 
         margin-bottom: 30px;
-      }
-      .image {
-        width: 170px;
-        height: 170px;
-        object-fit: cover;
-        border-radius: 600px;
-        margin-bottom: 20px;
-      }
-      
-      .profile img{
-        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          height: max-content;
+          font-size: 1.4em;
+          margin-top: 20px;
+          text-align: center;
+          line-height: 35px;
+        }
+        
+        h1 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+        .image {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+          border-radius: 600px;
+          margin-bottom: 20px;
+        }
+        
+        .profile img{
+          width: 150px;
+        }
       }
     }
   }
-}
 
 
-    
   .Members {
     padding-bottom: 100px;
     .profile {
@@ -569,8 +593,8 @@
     }
     padding-top: 40px;
     h1 {
-      font-size: 3em;
-      font-weight: 800;
+      font-size: 2.8em;
+      font-weight: bold;
       margin-bottom: 50px;
     }
     .home {
@@ -581,14 +605,13 @@
       margin-top: 100px;
       .name {
         margin-top: 20px;
-        font-size: 2.2em;
+        font-size: 2em;
         margin-right: 10px;
-        font-weight: 700;
       }
       .desc {
         margin-top: 20px;
-        font-size: 1.4em;
-        line-height: 32px;
+        font-size: 1.2em;
+        line-height: 30px;
         margin-bottom: 30px;
       }
     }
@@ -597,8 +620,7 @@
     .master-box {
       margin-top: 70px;
       h1 {
-        font-size: 2.5em;
-        font-weight: 800;
+        font-size: 2.3em;
         margin-bottom: 50px;
       }
       .profile {
@@ -610,29 +632,25 @@
         width: 500px;
         grid-template-columns: 300px 300px 300px; 
         .item {
-          margin-bottom: 40px;
+          margin-bottom: 50px;
           .name {
             margin-top: 20px;
-            font-weight: 700;
+            font-weight: bold;
             font-size: 1.8em;
           }
           .email {
             margin-top: 5px;
             line-height: 35px;
-            font-size: 1.3em;
+            font-size: 1.1em;
           }
           .mbti {
-            margin-top: 2px;
-            font-size: 1.2em;
-            font-weight: 700;
+            font-size: 1em;
             border-radius: 4px;
             padding: 6px 12px;
           }
           .interest {
-            margin-top: 2px;
             margin-left: 10px;
-            font-size: 1.2em;
-            font-weight: 700;
+            font-size: 1em;
             border-radius: 4px;
             padding: 6px 12px;
           }
@@ -653,7 +671,7 @@
       }
     }
     .more {
-      font-weight: 700;
+      font-weight: bold;
       font-size: 1.6em;
     }
   }
@@ -681,7 +699,7 @@
       background-color: #ffffff7a;
       border: #3E53BF 1px solid;
       margin-top: 50px;
-      font-weight: 700;
+      font-weight: bold;
     }
     .title {
       color: #000,
@@ -692,7 +710,7 @@
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 840px) {
   .Home {
     .blur {
       width: 400px; 
@@ -704,7 +722,7 @@
     
     .intro {
       margin-top: 60px;
-      width: 750px;
+      width: 700px;
       border-radius: 20px;
       padding: 20px 28px;
       
@@ -738,17 +756,16 @@
   .title-box {
     margin-top: 120px;
     h1 {
-      font-size: 2.6em;
-      font-weight: 800;
+      font-size: 2.3em;
       margin-bottom: 30px;
     }
     p {
       width: 500px;
-      font-size: 1.3em;
-      font-weight: 600;
+      font-size: 1.2em;
+      font-weight: 500;
       line-height: 30px;
     }
-    }
+  }
 
   .Research {
     .top__contents {
@@ -758,7 +775,7 @@
       .card {
         box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
         width: 400px;
-        height: 400px;
+        height: max-content;
         border-radius: 20px;
         padding: 30px 40px;
         margin: 0 10px; 
@@ -775,7 +792,7 @@
         
         h1 {
           font-size: 1.7em;
-          font-weight: 700;
+          font-weight: bold;
           margin-bottom: 20px;
         }
         .image {
@@ -796,14 +813,14 @@
   .Members {
     padding-bottom: 100px;
     .profile {
-      width: 160px;
-      height: 160px;
+      width: 150px;
+      height: 150px;
       border-radius: 500px;
     }
     padding-top: 40px;
     h1 {
-      font-size: 2.6em;
-      font-weight: 800;
+      font-size: 2.4em;
+      font-weight: bold;
       margin-bottom: 40px;
     }
     .home {
@@ -816,12 +833,12 @@
         margin-top: 20px;
         font-size: 2em;
         margin-right: 10px;
-        font-weight: 700;
+        font-weight: bold;
       }
       .desc {
         margin-top: 20px;
-        font-size: 1.4em;
-        line-height: 32px;
+        font-size: 1.1em;
+        line-height: 28px;
         margin-bottom: 30px;
       }
     }
@@ -830,14 +847,14 @@
     .master-box {
       margin-top: 70px;
       h1 {
-        font-size: 2.3em;
-        font-weight: 800;
+        font-size: 2.1em;
+        font-weight: bold;
         margin-bottom: 50px;
       }
       .profile {
         border: 1px solid #acb0b7;
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
       }
       .container {
         width: 500px;
@@ -846,26 +863,23 @@
           margin-bottom: 40px;
           .name {
             margin-top: 20px;
-            font-weight: 700;
             font-size: 1.7em;
           }
           .email {
             margin-top: 5px;
             line-height: 35px;
-            font-size: 1.2em;
+            font-size: 1em;
           }
           .mbti {
             margin-top: 2px;
-            font-size: 1.1em;
-            font-weight: 700;
+            font-size: 0.9em;
             border-radius: 4px;
             padding: 6px 12px;
           }
           .interest {
             margin-top: 2px;
             margin-left: 10px;
-            font-size: 1.1em;
-            font-weight: 700;
+            font-size: 0.9em;
             border-radius: 4px;
             padding: 6px 12px;
           }
@@ -881,12 +895,35 @@
       border-radius: 20px;
       padding: 20px 25px;
       p {
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 27px;
       }
     }
     .more {
       font-size: 1.5em;
+    }
+  }
+
+  .Gallery {
+    padding-bottom: 100px;
+    width: 100vw;
+    .cardCover {
+      width: 220px;
+      overflow: hidden;
+      border-width: 0;
+    
+      .card {
+        align-items: center;
+        width: 220px;
+        height: 220px;
+        object-fit: cover; 
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    .cardBox {
+      height: max-content;
     }
   }
 
@@ -912,7 +949,7 @@
       background-color: #ffffff7a;
       border: #3E53BF 1px solid;
       margin-top: 50px;
-      font-weight: 700;
+      font-weight: bold;
     }
     .title {
       color: #000,
@@ -935,10 +972,10 @@
     padding-top: 100px;
     
     .intro {
-      margin-top: 60px;
-      width: 300px;
+      margin-top: 40px;
+      width: 290px;
       border-radius: 20px;
-      padding: 20px 28px;
+      padding: 16px 18px;
       
       .profile {
         width: 0px;
@@ -952,7 +989,7 @@
         margin-bottom: 10px;
       }
       p {
-        width: 300px;
+        width: 280px;
         font-size: 0.8em;
         line-height: 20px;
         text-align: left;
@@ -970,15 +1007,16 @@
   .title-box {
     margin-top: 100px;
     h1 {
-      font-size: 2.2em;
-      font-weight: 800;
+      width: 310px;
+      text-align: center;
+      font-size: 1.8em;
       margin-bottom: 20px;
     }
     p {
       width: 300px;
-      font-size: 0.9em;
-      font-weight: 600;
-      line-height: 25px;
+      font-size: 0.8em;
+      font-weight: 500;
+      line-height: 22px;
     }
   }
 
@@ -1002,17 +1040,17 @@
           font-size: 0.9em;
           margin-top: 20px;
           text-align: center;
-          line-height: 25px;
+          line-height: 23px;
         }
         
         h1 {
-          font-size: 1.7em;
-          font-weight: 700;
+          font-size: 1.4em;
+          font-weight: bold;
           margin-bottom: 20px;
         }
         .image {
-          width: 120px;
-          height: 120px;
+          width: 110px;
+          height: 110px;
           object-fit: cover;
           border-radius: 600px;
           margin-bottom: 10px;
@@ -1028,32 +1066,31 @@
   .Members {
     padding-bottom: 100px;
     .profile {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 500px;
     }
     padding-top: 40px;
     h1 {
-      font-size: 2.2em;
-      font-weight: 800;
+      font-size: 2em;
       margin-bottom: 30px;
     }
     .home {
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
     }
     .prof-box {
       margin-top: 100px;
       .name {
         margin-top: 20px;
-        font-size: 1.6em;
-        margin-right: 10px;
-        font-weight: 700;
+        font-size: 1.4em;
+        margin-right: 5px;
+        font-weight: bold;
       }
       .desc {
         margin-top: 15px;
-        font-size: 1.1em;
-        line-height: 25px;
+        font-size: 0.78em;
+        line-height: 21px;
         margin-bottom: 30px;
       }
     }
@@ -1062,42 +1099,40 @@
     .master-box {
       margin-top: 70px;
       h1 {
-        font-size: 2em;
-        font-weight: 800;
+        font-size: 1.7em;
+        font-weight: bold;
         margin-bottom: 30px;
       }
       .profile {
         border: 1px solid #acb0b7;
-        width: 100px;
-        height: 100px;
+        width: 95px;
+        height: 95px;
       }
       .container {
         width: max-content;
-        grid-template-columns: 190px 190px; 
+        grid-template-columns: 180px 180px; 
         .item {
           margin-bottom: 40px;
           .name {
             margin-top: 20px;
-            font-weight: 700;
-            font-size: 1.4em;
+            font-size: 1.3em;
           }
           .email {
             margin-top: 2px;
             line-height: 26px;
-            font-size: 0.9em;
+            font-size: 0.7em;
           }
           .mbti {
-            margin-top: 2px;
-            font-size: 1em;
-            font-weight: 700;
+            margin-top: 4px;
+            font-size: 0.8em;
             border-radius: 4px;
             padding: 5px 10px;
           }
           .interest {
-            margin-top: 2px;
+            margin-top: 4px;
             margin-left: 10px;
-            font-size: 1em;
-            font-weight: 700;
+            font-size: 0.8em;
+            font-weight: bold;
             border-radius: 4px;
             padding: 5px 10px;
           }
@@ -1111,13 +1146,13 @@
       position: absolute;
       bottom: -20%;
       left: 50%;
-      font-size: 1em;
+      font-size: 0.9em;
       font-weight: 500;
       height: auto;
       width: 80px;
       letter-spacing: -0.25px;
       margin-top: 9px;
-      padding: 10px 13px;
+      padding: 5px 7px;
       text-align: center;
       z-index: 100;
       transform: translate(-44%, 110%);
@@ -1129,29 +1164,38 @@
     .card {
       width: 300px;
       border-radius: 20px;
-      padding: 20px 20px;
+      padding: 10px 16px;
+      margin: 15px;
       p {
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 20px;
       }
     }
     .more {
       font-size: 1em;
+      padding-right: 20px;
+    }
+  }
+  .register_modal_header {
+    padding: 15px 0px;
+    h2 {
+      font-size: 1.3em;
+      font-weight: bold;
     }
   }
 
   .Gallery {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     width: 100vw;
     .cardCover {
-      width: 150px;
+      width: 135px;
       overflow: hidden;
       border-width: 0;
     
       .card {
         align-items: center;
-        width: 150px;
-        height: 150px;
+        width: 135px;
+        height: 135px;
         object-fit: cover; 
         img {
           object-fit: cover;
@@ -1185,7 +1229,7 @@
       background-color: #ffffff7a;
       border: #3E53BF 1px solid;
       margin-top: 50px;
-      font-weight: 700;
+      font-weight: bold;
     }
     .title {
       color: #000,

@@ -38,7 +38,7 @@ function Header({ toggle, mode }) {
 
             <input type="checkbox" id="menuicon"/>
             <label htmlFor="menuicon">
-              <Ham></Ham>
+              <span></span>
               <span></span>
               <span></span>
             </label>

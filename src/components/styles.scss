@@ -14,7 +14,7 @@
     p {
       line-height: 40px;
       font-size: 1.7em;
-      font-weight: 700;
+      font-weight: bold;
     }
     .infos {
       margin-top: 20px;
@@ -99,7 +99,7 @@
   margin-left: 10px;
   .name {
     font-size: 1.3em;
-    font-weight: 900;
+    font-weight: bold;
   }
 
   .desc {
@@ -126,6 +126,7 @@
     border-style: solid;
   }
 }
+
 
 .navbar {
   height: 100px;
@@ -155,8 +156,8 @@
 
 .navbar__menu li {
   margin-left: 10px;
-  font-size: 1.6em;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 500;
   padding: 8px 12px;
   border-radius: 50px;
   cursor: pointer;
@@ -301,8 +302,28 @@ input[id="menuicon"] + label span {
 }
 
 
+@media all and (max-width: 1500px) {
+  .Header {
+    .navbar {
+      padding: 0 40px;
+      .logo-writing {
+        font-size: 1.2em;
+      }
+      .navbar__menu li {
+        margin-left: 4px !important;
+        font-size: 1.4em;
+        cursor: pointer;
+      }
+      
+      .logo {
+        height: 50px;
+      }
+    }
+  }
+}
 
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: 1250px) {
   .Header {
     .noMargin {
       padding: 0 !important;
@@ -357,10 +378,25 @@ input[id="menuicon"] + label span {
       }
     }
   }
-
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
+  .containerG {
+    width: 220px;
+    height: 220px;
+    margin: -20px;
+    margin-bottom: 20px;
+    .slick-slide div {
+      margin-bottom: 10px;
+    }
+    .slick-dots {
+      margin-top: 30px;
+    }
+    .slick-prev, .slick-next {
+      font-size: 15px !important;
+    }
+  }
+
   input[id="menuicon"] + label {
     right: 5%;
   }
@@ -390,7 +426,7 @@ input[id="menuicon"] + label span {
     .contents_root {
       p {
         font-size: 1.5em;
-        font-weight: 700;
+        font-weight: bold;
       }
       .infos {
         margin-top: 20px;
@@ -425,8 +461,8 @@ input[id="menuicon"] + label span {
 
 @media screen and (max-width: 500px) {
   .containerG {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
     margin: -20px;
     margin-bottom: 20px;
     .slick-slide div {
@@ -450,10 +486,10 @@ input[id="menuicon"] + label span {
     }
     
     .slick-dots li {
-      display: inline-block; /* li 요소들을 가로로 표시합니다. */
-      margin: 0 1px; /* 각각의 li 요소 사이의 간격을 조절합니다. */
-      padding: 0; /* 불필요한 패딩을 제거합니다. */
-      list-style: none; /* 리스트 마커를 제거합니다. */
+      display: inline-block; 
+      margin: 0 1px; 
+      padding: 0;
+      list-style: none;
     }
   }
   input[id="menuicon"] + label {
@@ -468,30 +504,33 @@ input[id="menuicon"] + label span {
   }
     
   .card-list {
-    padding: 20px 30px;
+    padding: 10px 12px;
     .card {
-      width: 300px;
+      width: 290px;
       border-radius: 20px;
-      padding: 20px 25px;
+      padding: 10px 16px;
+      margin: 15px;
       p {
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 20px;
       }
     }
   }
 
   .Footer {
+    padding: 55px 0;
     .contents_root {
-      margin-left: 40px;
+      margin-left: 30px;
       p {
-        font-size: 1.5em;
-        font-weight: 700;
+        font-size: 1.4em;
+        line-height: 33px;
+        font-weight: bold;
       }
       .infos {
-        margin-top: 20px;
+        margin-top: 15px;
         p {
-          line-height: 30px;
-          font-size: 1.3em;
+          line-height: 28px;
+          font-size: 1em;
           font-weight: 400;
         }
       }
@@ -500,9 +539,21 @@ input[id="menuicon"] + label span {
 
   .navbar {
     height: 60px;
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
   .logo {
-    height: 40px;
+    height: 40px !important;
   }
+
+  .sidebar__menu li {
+    font-size: 1.3em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 13px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    list-style: none;
+  }
+
 }

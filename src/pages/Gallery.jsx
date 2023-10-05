@@ -31,8 +31,8 @@ function Gallery() {
     <div className='Gallery'>
       <div className='title-box'>
         <h1><FormattedMessage id="Gallery" /></h1> 
-      <p><FormattedMessage id="gal1" /></p>
-      <p><FormattedMessage id="gal2" /></p>
+        <p><FormattedMessage id="gal1" /></p>
+        <p><FormattedMessage id="gal2" /></p>
       </div>
       <div className='row-box'>
         <div className='cardBox'>
