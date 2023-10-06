@@ -14,6 +14,7 @@ import gunhee from 'assets/members/gunhee.png';
 import gunheeB from 'assets/members/gunheeB.jpeg';
 import lixiang from 'assets/members/lixiang.png';
 import dahye from 'assets/members/dahye.jpeg';
+import dahyeB from 'assets/members/dahyeB.jpeg';
 import hoon from 'assets/members/hoon.png';
 import minjae from 'assets/members/minjae.jpeg';
 import cheng from 'assets/members/cheng.jpeg';
@@ -23,11 +24,12 @@ import yonghyunB from 'assets/members/yonghyunB.png';
 import jungmin from 'assets/members/jungmin.png';
 import jungminB from 'assets/members/jungminB.png';
 import styled from 'styled-components';
-import user from 'assets/user.png';
 
 function Members ({ toggle, mode }) {
   const [isListHover, setIsListHover] = useState(false);
   const [number, setNumber] = useState(-1);
+  const [isListHover2, setIsListHover2] = useState(false);
+  const [number2, setNumber2] = useState(-1);
   const homepageUrl = "http://yeonjoonlee.com/"
   const phds = [
     {
@@ -57,7 +59,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "dahye",
       "image": dahye,
-      "imageB": dahye,
+      "imageB": dahyeB,
       "email": 'dahyesong99@hanyang.ac.kr',
       "mbti": 'ISTJ',
       "interest": 'dahyeR',
@@ -157,7 +159,10 @@ function Members ({ toggle, mode }) {
         <div className='container'>
           {phds.map((p, idx) => (
             <div className='item'>
-              <img className='profile' src={p.image} alt="" />
+              <img 
+                onMouseOver={() => {setIsListHover2(true); setNumber2(idx)}}
+                onMouseOut={() => setIsListHover2(false)}
+                className='profile' src={isListHover2 && number2 === idx? p.imageB : p.image} alt="" />
               <p className='name'><FormattedMessage id={p.name} /></p>
               <p className='email'>{p.email}</p>
               <div className='row-box'>
@@ -183,7 +188,7 @@ function Members ({ toggle, mode }) {
               <img  
               onMouseOver={() => {setIsListHover(true); setNumber(idx)}}
               onMouseOut={() => setIsListHover(false)}
-              className='profile' src={isListHover && number == idx? m.imageB : m.image} alt="" />
+              className='profile' src={isListHover && number === idx? m.imageB : m.image} alt="" />
               <p className='name'><FormattedMessage id={m.name} /></p>
               <p className='email'>{m.email}</p>
               {/* <p className='email'>{m.mbti}</p>

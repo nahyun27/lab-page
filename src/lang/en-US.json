@@ -19,14 +19,14 @@
   "button": "⬇ Reach out to us right now ⬇",
   
   "research": "Research Area",
-  "researchDesc1": "Our research lab conducts research on a wide range of security-related topics such as system security (IoT, mobile, etc.), cybercrime, usable security (HCI with computer security), and more.",
-  "researchDesc2": "We tackle various security challenges in these fields by utilizing technologies such as reverse engineering, forensics, artificial intelligence/machine learning, natural language processing, big data analysis, and signal processing. ",
+  "researchDesc1": "Our research lab conducts research on a wide range of security-related topics such as system security, cybercrime, usable security, and more.",
+  "researchDesc2": "We tackle various security challenges in these fields by utilizing technologies such as reverse engineering, forensics, AI/ML, NLP, big data analysis, and signal processing. ",
   "ai": "AI Security",
   "mobile": "Mobile Security",
   "system": "System Security",
-  "aiDesc": "Our research lab delves into the security aspects of AI systems and algorithms, addressing emerging threats and exploring innovative approaches to enhance security with a particular focus on areas like Adversarial Attacks and usage of Explainable AI.",
-  "mobileDesc": "Mobile devices play an indispensable role in modern society, making mobile security more crucial than ever. We focus on discovering and addressing security vulnerabilities in mobile apps and platforms, developing solutions to ensure the safe use of mobile devices.",
-  "systemDesc": "System security is paramount in safeguarding various IT systems, including networks, operating systems, cloud systems, and IoT devices. Our lab is dedicated to developing innovative technologies and methods to tackle new challenges and threats in system security.",
+  "aiDesc": "Our research lab delves into the security aspects of AI systems and algorithms, addressing emerging threats and exploring innovative approaches with a particular focus on areas like Adversarial Attacks and usage of Explainable AI.",
+  "mobileDesc": "Mobile devices play an indispensable role in modern society, making mobile security more crucial than ever. We focus on addressing vulnerabilities in apps and platforms, developing solutions to ensure the safe use of mobile devices.",
+  "systemDesc": "System security is paramount in safeguarding various IT systems, including networks, OS, cloud systems, and IoT devices. Our lab is dedicated to developing innovative technologies and methods to tackle new challenges in system security.",
 
   "publications": "Representative Publications",
 

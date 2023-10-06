@@ -35,7 +35,6 @@ function Research () {
       <div className="title-box">
         <h1> <FormattedMessage id="research" /></h1>
         <p> <FormattedMessage id="researchDesc1"/></p>
-          <br/>
         <p> <FormattedMessage id="researchDesc2"/></p>
       </div>
       <div className="top__contents">
