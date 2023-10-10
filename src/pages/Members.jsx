@@ -7,7 +7,10 @@ import { FormattedMessage } from "react-intl";
 import prof from 'assets/members/professor.jpeg';
 import home from 'assets/home.png';
 import nahyun from 'assets/members/nahyun.png';
+import nahyunB from 'assets/members/nahyunB.jpeg';
 import jiwon from 'assets/members/jiwon.jpeg';
+import taewan from 'assets/members/taewan.jpeg';
+import jiwonB from 'assets/members/jiwonB.jpeg';
 import sungju from 'assets/members/sungju.png';
 import sungbin from 'assets/members/sungbin.png';
 import gunhee from 'assets/members/gunhee.png';
@@ -41,6 +44,14 @@ function Members ({ toggle, mode }) {
       "interest": 'gagyeomR',
     }, 
     {
+      "name": "taewan",
+      "image": taewan,
+      "imageB": taewan,
+      "email": 'taewankim778@hanyang.ac.kr',
+      "mbti": 'ENTJ',
+      "interest": 'taewanR',
+    }, 
+    {
       "name": "sungbin",
       "image": sungbin,
       "imageB": sungbin,
@@ -69,7 +80,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "jiwon",
       "image": jiwon,
-      "imageB": jiwon,
+      "imageB": jiwonB,
       "email": 'jwhero12@hanyang.ac.kr',
       "mbti": 'ESFJ',
       "interest": 'jiwonR',
@@ -133,7 +144,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "nahyun",
       "image": nahyun,
-      "imageB": nahyun,
+      "imageB": nahyunB,
       "email": 'ksknh7@hanyang.ac.kr',
       "mbti": 'ENTJ',
       "interest": 'nahyunR',

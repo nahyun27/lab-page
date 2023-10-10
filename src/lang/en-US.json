@@ -45,6 +45,7 @@
   "profDesc2":  "PhD in Security Informatics in Indiana University Bloomington",
 
   "gagyeom":  "Gagyeom Kim", 
+  "taewan":  "Taewan Kim",
   "sungbin":  "Sungbin Park", 
   "sungju":  "Sungju Yun", 
   "dahye":  "Dahye Song", 
@@ -63,6 +64,7 @@
   "interest":  "Interest",
 
   "gagyeomR":  "Android Security", 
+  "taewanR":  "Medical AI, Multimodal Learning",
   "sungbinR":  "Cybercrime, IoT Security, Usable Security", 
   "sungjuR":  "Cryptography, System Security, Program Analysis", 
   "dahyeR":  "Medical AI, Multimodal Learning",

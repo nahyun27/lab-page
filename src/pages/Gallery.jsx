@@ -19,13 +19,18 @@ import p14 from 'assets/gallery/014.jpeg';
 import p15 from 'assets/gallery/015.jpeg';
 import p16 from 'assets/gallery/016.jpeg';
 import p17 from 'assets/gallery/017.jpeg';
+import p18 from 'assets/gallery/018.png';
+import p19 from 'assets/gallery/019.jpeg';
+import p20 from 'assets/gallery/020.jpeg';
+import p21 from 'assets/gallery/021.jpeg';
+import p22 from 'assets/gallery/022.png';
 
 function Gallery() {
 
-  const photos1 = [ p1, p2, p3, p14, ]
-  const photos2 = [ p7, p9, p11, p12,]
-  const photos3 = [ p8, p15, p16, p17]
-  const photos4 = [ p13, p4, p5, p6, p10,]
+  const photos1 = [ p1, p19, p20, p3, p14, ]
+  const photos2 = [ p7, p9, p11, p12, p2]
+  const photos3 = [ p8, p18, p15, p16, p17]
+  const photos4 = [ p13, p21, p22, p6, p10,]
   
   return (
     <div className='Gallery'>
