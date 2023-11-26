@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# ACE 연구실 홈페이지
+🌐 [ACE Lab Homepage](https://ace.hanyang.ac.kr/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+안녕하세요, ACE 연구실입니다! 우리 연구실은 빠르게 변화하는 디지털 환경에서 발생하는 다양한 분야의 사이버 보안 문제를 해결하기 위해 끊임없이 노력하고 있습니다.
 
-## Available Scripts
+## 모집 정보
+- **[컴퓨터공학과/인공지능융합학과] 대학원생 및 학부연구생 모집중**
+  - 석사, 박사, 통합과정 대학원생과 학부연구생을 모집 중입니다.
+  - 주요 연구분야: 시스템 보안 (IoT, 모바일 등), 어플리케이션 보안, 사이버 범죄, Usable Security (HCI with Computer Security)
 
-In the project directory, you can run:
+## 함께해요!
+### 연구 분야
+- 시스템 보안, 사이버 범죄, 사용자 친화적 보안 등 다양한 주제에 대한 보안 연구
+- 역공학, 포렌식, 인공 지능/기계 학습, 자연어 처리, 대규모 데이터 분석, 신호 처리 등의 기술 활용
 
-### `npm start`
+### 세부 연구 분야
+1. **인공지능 보안**
+   - AI 시스템 및 알고리즘의 보안 연구
+   - 적대적 공격, 설명 가능한 AI에 중점
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **모바일 보안**
+   - 모바일 앱 및 플랫폼의 보안 취약점 발견 및 해결
+   - 안전한 모바일 기기 사용을 위한 솔루션 개발
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **시스템 보안**
+   - 네트워크, 운영 체제, 클라우드 시스템, 사물 인터넷 기기 등의 IT 시스템 보호
+   - 새로운 도전과 위협에 대응하는 혁신적인 기술 개발
 
-### `npm test`
+4. **의료 인공지능**
+   - 최첨단 기술을 활용한 의료 분야의 혁신적인 연구
+   - 인공지능을 활용한 질병 예측, 장기 세그멘테이션, 증상 파악
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 문의
+더 많은 정보 및 교수님 면담을 원하시면 아래 정보를 참고해주세요.
+- yeonjoonlee@hanyang.ac.kr
+- 15588, 경기도 안산시 상록구 한양대학로 55 4공학관 312호
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# ACE Lab Homepage
+🌐 [ACE Lab Homepage](https://ace.hanyang.ac.kr/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Welcome to ACE Lab! Our research endeavors are aimed at addressing complex security issues and enhancing cybersecurity in an ever-evolving digital landscape.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Recruitment Information
+- **[Computer Science/AI] Research Assistant Positions Available**
+  - We are currently recruiting graduate and undergraduate research assistants.
+  - Key research areas: System security (IoT, mobile, etc.), application security, cybercrime, and usable security (HCI with computer security).
 
-### `npm run eject`
+## Join Us!
+### Research Area
+- Our research lab conducts research on a wide range of security-related topics such as system security, cybercrime, usable security, and more.
+- We tackle various security challenges in these fields by utilizing technologies such as reverse engineering, forensics, AI/ML, NLP, big data analysis, and signal processing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Specific Research Areas
+1. **AI Security**
+   - Research into the security aspects of AI systems and algorithms
+   - Emphasis on adversarial attacks and explainable AI
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Mobile Security**
+   - Identifying and resolving security vulnerabilities in mobile apps and platforms
+   - Developing solutions for the secure use of mobile devices
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **System Security**
+   - Paramount in safeguarding various IT systems, including networks, OS, cloud systems, and IoT devices
+   - Dedicated to developing innovative technologies and methods to tackle new challenges in system security
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Medical AI**
+   - Innovative studies in the medical field by leveraging cutting-edge technologies
+   - Goal is to enhance patient health management using AI for disease prediction, organ segmentation, and symptom identification
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For more information and to request a meeting with a professor, please refer to the following information.
+- yeonjoonlee@hanyang.ac.kr
+- 55 Hanyangdeahak-ro, Sangnok-gu, Ansan, Gyeonggi-do, 15588, Korea. room 312, Engineering Building 4
