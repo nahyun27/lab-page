@@ -15,7 +15,7 @@ const resource =  {
 
 i18n
     .use(initReactI18next)
-    .init({
+    .init(
         resources: resource,
         // 초기 설정 언어
         lng: 'ko-KR',

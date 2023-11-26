@@ -1,6 +1,7 @@
 import './styles.scss';
 import React, {useState} from "react"
 import ai from 'assets/ai.jpg';
+import medical from 'assets/medical.webp';
 import mobile from 'assets/mobile.jpg';
 import system from 'assets/system.jpg';
 import styled from 'styled-components';
@@ -23,6 +24,11 @@ function Research () {
       "name": "system",
       "img": system,
       "desc": 'systemDesc',
+    },
+    {
+      "name": "medical",
+      "img": medical,
+      "desc": 'medicalDesc',
     },
     // {
     //   "name": "Cyber Crime",

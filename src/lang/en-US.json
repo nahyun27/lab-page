@@ -14,7 +14,7 @@
   "welcome": "Welcome to ACE Lab!",
   "intro1": "Our research endeavors are aimed at addressing complex security issues",
   "intro2": "and enhancing cybersecurity in an ever-evolving digital landscape.",
-  "recruitingTitle": "[Computer Science/Artificial Intelligence] Research Assistant Positions Available",
+  "recruitingTitle": "[Computer Science/AI] Research Assistant Positions Available",
   "recruitingDesc": "We are currently recruiting graduate and undergraduate research assistants. Our research areas primarily focus on system security (IoT, mobile, etc.), application security, cybercrime, and usable security (HCI with computer security). We conduct research in these fields using technologies such as reverse engineering, forensics, AI/ML, NLP, big data analysis, signal processing, and more. We welcome applications from students who are interested in our lab. If you have any questions or would like to request a meeting with a professor, please refer to the 'contact' section.",
   "button": "⬇ Reach out to us right now ⬇",
   
@@ -24,10 +24,11 @@
   "ai": "AI Security",
   "mobile": "Mobile Security",
   "system": "System Security",
+  "medical": "System Security",
   "aiDesc": "Our research lab delves into the security aspects of AI systems and algorithms, addressing emerging threats and exploring innovative approaches with a particular focus on areas like Adversarial Attacks and usage of Explainable AI.",
   "mobileDesc": "Mobile devices play an indispensable role in modern society, making mobile security more crucial than ever. We focus on addressing vulnerabilities in apps and platforms, developing solutions to ensure the safe use of mobile devices.",
   "systemDesc": "System security is paramount in safeguarding various IT systems, including networks, OS, cloud systems, and IoT devices. Our lab is dedicated to developing innovative technologies and methods to tackle new challenges in system security.",
-
+  "medicalDesc": "Our lab is conducting innovative studies in the medical field by leveraging cutting-edge technologies. Our primary goal is to enhance patient health management using AI for disease prediction, organ segmentation, and symptom identification.",
   "publications": "Representative Publications",
 
   "prof": "Professor",
@@ -73,7 +74,7 @@
   "chengR":  "Internet Security", 
   "lixiangR":  "Network Security", 
   "yonghyunR":  "Rehabilitation Robotics with AI",  
-  "geonheeR":  "System Security, Side-Channel Analysis", 
+  "gunheeR":  "System Security, Side-Channel Analysis", 
   "hoonR":  "Drone Security, IoT Security", 
   "minjaeR":  "Network Security",
   "nahyunR":  "AI Security"

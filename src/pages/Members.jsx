@@ -44,14 +44,6 @@ function Members ({ toggle, mode }) {
       "interest": 'gagyeomR',
     }, 
     {
-      "name": "taewan",
-      "image": taewan,
-      "imageB": taewan,
-      "email": 'taewankim778@hanyang.ac.kr',
-      "mbti": 'ENTJ',
-      "interest": 'taewanR',
-    }, 
-    {
       "name": "sungbin",
       "image": sungbin,
       "imageB": sungbin,
@@ -121,7 +113,7 @@ function Members ({ toggle, mode }) {
       "name": "gunhee",
       "image": gunhee,
       "imageB": gunheeB,
-      "email": 'ksknh7@hanyang.ac.kr',
+      "email": 'no1gun2@hanyang.ac.kr',
       "mbti": 'ICBM',
       "interest": 'gunheeR',
     }, 
@@ -148,6 +140,14 @@ function Members ({ toggle, mode }) {
       "email": 'ksknh7@hanyang.ac.kr',
       "mbti": 'ENTJ',
       "interest": 'nahyunR',
+    }, 
+    {
+      "name": "taewan",
+      "image": taewan,
+      "imageB": taewan,
+      "email": 'taewankim778@hanyang.ac.kr',
+      "mbti": 'ENTJ',
+      "interest": 'taewanR',
     }, 
   ]
   return(

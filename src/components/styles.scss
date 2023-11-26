@@ -13,14 +13,14 @@
     width: 1500px;
     p {
       line-height: 40px;
-      font-size: 1.7em;
+      font-size: 1.6em;
       font-weight: bold;
     }
     .infos {
       margin-top: 20px;
       p {
         line-height: 35px;
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-weight: 400;
       }
     }
@@ -65,14 +65,14 @@
 .card-list {
   padding: 20px 30px;
   .card {
-    width: 1300px;
+    width: 1000px;
     margin: 20px 0;
     border-radius: 20px;
     padding: 30px 40px;
     p {
       display: inline;
-      font-size: 1.4em;
-      line-height: 35px;
+      font-size: 1.1em;
+      line-height: 28px;
     }
     .paper-link {
       cursor: pointer;
@@ -90,7 +90,7 @@
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
   pointer-events: none;
   margin-right: 10px;
 }
@@ -119,7 +119,6 @@
   .box {
     display: flex;
     justify-content: center;
-    // background-color: #fff;
     border: transparent;
     border-bottom: #cecece;
     border-width: 1px;
@@ -129,7 +128,7 @@
 
 
 .navbar {
-  height: 100px;
+  height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,7 +138,7 @@
 }
 
 .navbar__logo {
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   list-style: none;
   padding-left: 0px;
@@ -156,7 +155,7 @@
 
 .navbar__menu li {
   margin-left: 10px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 500;
   padding: 8px 12px;
   border-radius: 50px;
@@ -165,11 +164,13 @@
 
 .navbar__menu li:hover {
   color: #3E53BF;
+  font-weight: 800;
 }
 
 .active li{ 
   background-color: #f4f6f9;
   color: #3E53BF;
+  font-weight: 800;
 }
 
 
@@ -247,16 +248,33 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
   margin-top: 80px;
 }
 
-.sidebar__menu li {
-  font-size: 1.3em;
+.sidebar__menu a > li {
+  font-size: 1.2em;
   padding: 10px 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   font-weight: 600;
   text-align: center;
   display: flex;
   list-style: none;
 }
+
+.sidebar__menu form > button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+.sidebar__menu p{
+  font-size: 1.7em;
+  padding: 10px 20px;
+}
+
+.noMargin p{
+  font-size: 1.4em;
+}
+.noMargin p, form button{
+  font-size: 1.4em;
+}
+
 
 .sidebar__menu li :hover {
   color: #3E53BF;
@@ -444,7 +462,7 @@ input[id="menuicon"] + label span {
     padding: 0 20px;
   }
   .logo {
-    height: 50px;
+    height: 45px;
   }
   
   .logo-writing {
@@ -518,19 +536,20 @@ input[id="menuicon"] + label span {
   }
 
   .Footer {
-    padding: 55px 0;
+    padding: 50px 20px;
     .contents_root {
       margin-left: 30px;
       p {
-        font-size: 1.4em;
-        line-height: 33px;
+        width: 360px;
+        font-size: 1.1em;
+        line-height: 28px;
         font-weight: bold;
       }
       .infos {
         margin-top: 15px;
         p {
-          line-height: 28px;
-          font-size: 1em;
+          line-height: 26px;
+          font-size: 0.9em;
           font-weight: 400;
         }
       }
@@ -538,11 +557,11 @@ input[id="menuicon"] + label span {
   }
 
   .navbar {
-    height: 60px;
+    height: 55px;
     padding: 0 20px !important;
   }
   .logo {
-    height: 40px !important;
+    height: 35px !important;
   }
 
   .sidebar__menu li {

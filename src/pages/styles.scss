@@ -52,16 +52,16 @@
   align-items: center;
   justify-content: center;
   h1 {
-    font-size: 3.3em;
+    font-size: 2.6em;
     font-weight: bold;
     margin-bottom: 30px;
   }
   p {
     text-align: center;
-    width: 1200px;
-    font-size: 1.5em;
+    width: 1000px;
+    font-size: 1.2em;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 34px;
   }
 }
 
@@ -78,20 +78,19 @@
   h1 {
     text-align: center;
     font-weight: bold;
-    margin-top: 20px;
     margin-bottom: 20px;
   }
   .blur {
-    width: 780px; 
-    height: 450px;  
+    width: 660px; 
+    height: 390px;  
     border-radius: 30px;
     object-fit: cover;
     margin-top: 30px;
   }
   
   .intro {
-    margin-top: 60px;
-    width: 1300px;
+    margin-top: 40px;
+    width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,36 +99,36 @@
     padding: 20px 38px;
     
     .profile {
-      width: 480px;
-      height: 300px;
+      width: 430px;
+      height: 260px;
       margin-right: -220px;
       object-fit: cover;
     }
     p {
       font-size: 1.2em;
       font-weight: normal;
-      line-height: 40px;
+      line-height: 35px;
       text-align: left;
     }
     .title {
-      font-size: 1.6em;
+      font-size: 1.4em;
       font-weight: 500;
       text-align: left;
+      font-weight: 700;
       margin-bottom: 10px;
     }
   }
-
   .contact_button {
-    margin-top: 60px;
+    margin-top: 40px;
     box-shadow: 0 10px 25px -7px rgba(0,0,0,0.7);
     margin-bottom: 100px;
-    padding: 26px 45px;
+    padding: 25px 45px;
     border-radius: 100px;
     border-width: 0;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 }
 .home .icon:hover {
@@ -139,20 +138,20 @@
 .Members {
   padding-bottom: 100px;
   .profile {
-    width: 200px; // 자를 사이즈를 명시해준다.
-    height: 200px;
+    width: 170px; // 자를 사이즈를 명시해준다.
+    height: 170px;
     object-fit: cover;
     border-radius: 500px;
   }
   padding-top: 40px;
   h1 {
-    font-size: 3.3em;
+    font-size: 2.6em;
     font-weight: bold;
     margin-bottom: 50px;
   }
   .home {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
   }
   .prof-box {
@@ -163,16 +162,16 @@
     justify-content: center;
     .name {
       margin-top: 20px;
-      font-size: 2.2em;
+      font-size: 1.8em;
       margin-right: 10px;
       font-weight: bold;
     }
     .desc {
-      margin-top: 20px;
+      margin-top: 18px;
       justify-content: center;
       text-align: center;
-      font-size: 1.3em;
-      line-height: 35px;
+      font-size: 1.1em;
+      line-height: 28px;
       margin-bottom: 30px;
     }
   }
@@ -186,20 +185,20 @@
     justify-content: center;
 
     h1 {
-      font-size: 2.6em;
+      font-size: 2.2em;
       font-weight: bold;
       margin-bottom: 50px;
     }
 
     .profile {
       border: 1px solid #acb0b7;
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
     }
     .container {
-      width: 500px;
+      // width: 500px;
       display: grid;
-      grid-template-columns: 300px 300px 300px 300px; /* 명시적 2개 열 정의 */
+      grid-template-columns: 270px 270px 270px 270px; /* 명시적 2개 열 정의 */
       // grid-auto-rows: 100px; /* 그 외(암시적) 행의 크기 정의 */
       justify-content: center;
       .item {
@@ -211,16 +210,16 @@
         .name {
           margin-top: 20px;
           font-weight: bold;
-          font-size: 1.6em;
+          font-size: 1.5em;
         }
         .email {
           margin-top: 5px;
           line-height: 35px;
-          font-size: 1.1em;
+          font-size: 0.9em;
         }
         .mbti {
           margin-top: 5px;
-          font-size: 1em;
+          font-size: 0.9em;
           font-weight: bold;
           border-radius: 4px;
           cursor: pointer;
@@ -229,7 +228,7 @@
         .interest {
           margin-top: 5px;
           margin-left: 10px;
-          font-size: 1em;
+          font-size: 0.9em;
           font-weight: bold;
           border-radius: 4px;
           cursor: pointer;
@@ -246,13 +245,13 @@
     bottom: -20%;
     line-height: 22px;
     left: 50%;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 500;
     height: auto;
     width: max-content;
     letter-spacing: -0.25px;
     margin-top: 9px;
-    padding: 10px 13px;
+    padding: 7px 11px;
     text-align: center;
     z-index: 100;
     transform: translate(-44%, 110%);
@@ -296,10 +295,10 @@
 
   .card {
     box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
-    width: 350px;
+    width: 280px;
     height: max-content;
     border-radius: 20px;
-    padding: 30px 40px;
+    padding: 20px 25px;
     margin: 0 10px;
     margin-top: 60px;
     margin-bottom:100px; 
@@ -307,11 +306,11 @@
     flex-direction: column;
     align-items: center;
     p {
-      font-size: 1.6em;
+      font-size: 1.3em;
       margin-top: 20px;
       text-align: center;
-      line-height: 35px;
-      height: 270px;
+      line-height: 31px;
+      height: 240px;
       flex-direction: column;
       justify-content: center;
     }
@@ -322,11 +321,11 @@
       margin-bottom: 30px;
     }
     .image {
-      width: 170px;
-      height: 170px;
+      width: 140px;
+      height: 140px;
       object-fit: cover;
       border-radius: 600px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     
     .profile img{
@@ -344,14 +343,14 @@
   background-color: #f4f6f9;
   padding-bottom: 100px;
   .card {
-    width: 1300px;
+    width: 1100px;
     margin: 20px 0;
     border-radius: 20px;
     padding: 30px 40px;
     p {
       display: inline;
-      font-size: 1.4em;
-      line-height: 35px;
+      font-size: 1.2em;
+      line-height: 32px;
     }
     .paper-link {
       cursor: pointer;
@@ -361,7 +360,7 @@
     cursor: pointer;
     color: orange;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-align: right;
   }
 }
@@ -455,15 +454,15 @@
   .Home {
     padding-top: 130px;
     .blur {
-      width: 600px; 
-      height: 400px;  
+      width: 580px; 
+      height: 350px;  
       border-radius: 30px;
       object-fit: cover;
       margin-top: 30px;
     }
     
     .intro {
-      margin-top: 60px;
+      margin-top: 30px;
       width: 900px;
       border-radius: 20px;
       padding: 20px 28px;
@@ -476,29 +475,41 @@
         object-fit: cover;
       }
       .title {
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin-bottom: 10px;
       }
       p {
-        font-size: 1.2em;
-        line-height: 34px;
+        font-size: 1em;
+        line-height: 30px;
         text-align: left;
       }
+    }
+    .contact_button {
+      margin-top: 35px;
+      margin-bottom: 100px;
+      padding: 21px 40px;
+      font-size: 1.3em;
     }
   }
   .Research {
     .card {
-      width: 300px;
+      width: 240px;
+      padding: 20 20;
       p {
-        font-size: 1.6em;
+        font-size: 1.2em;
         margin-top: 20px;
-        line-height: 35px;
-        height: 330px;
+        line-height: 28px;
+        height: 210px
       }
       h1 {
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: bold;
         margin-bottom: 30px;
+      }
+      .image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -506,20 +517,40 @@
 
 @media all and (max-width: 1250px) {
   .Home {
+    .blur {
+      width: 540px; 
+      height: 320px;  
+      border-radius: 30px;
+      object-fit: cover;
+      margin-top: 30px;
+    }
     .intro {
-      margin-top: 60px;
-      width: 750px;
+      margin-top: 30px;
+      width: 740px;
       border-radius: 20px;
       padding: 20px 28px;
+      .profile {
+        width: 350px;
+        height: 200px;
+        margin-left: -20px;
+        margin-right: -160px;
+        object-fit: cover;
+      }
+      .title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1em;
+        line-height: 26px;
+        text-align: left;
+      }
     }
-
     .contact_button {
-      margin-top: 60px;
-      box-shadow: 0 10px 25px -7px rgba(0,0,0,0.7);
+      margin-top: 33px;
       margin-bottom: 100px;
-      padding: 22px 40px;
-      cursor: pointer;
-      font-size: 1.5em;
+      padding: 20px 38px;
+      font-size: 1.2em;
     }
   }
   
@@ -527,53 +558,62 @@
   .title-box {
     margin-top: 120px;
     h1 {
-      font-size: 2.8em;
+      font-size: 2.1em;
       font-weight: bold;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
     p {
       width: 700px;
-      font-size: 1.3em;
+      font-size: 1.1em;
       font-weight: 500;
-      line-height: 35px;
+      line-height: 29px;
     }
   }
 
   .Research {
     .top__contents {
-      flex-direction: column;
       margin-top: 60px;
       margin-bottom:70px;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 350px 350px; 
       .card {
-        box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
-        width: 400px;
-        height: max-content;
-        border-radius: 20px;
-        padding: 30px 40px;
-        margin: 0 10px; 
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        p {
+        width: 270px;
+        // box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
+        // height: max-content;
+        // border-radius: 20px;
+        // padding: 30px 40px;
+        // margin: 0 10px; 
+        // margin-bottom: 30px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
           height: max-content;
-          font-size: 1.5em;
+        p {
+          height: 190px;
+          font-size: 1.2em;
           margin-top: 20px;
           text-align: center;
-          line-height: 35px;
+          line-height: 26px;
         }
         
         h1 {
-          font-size: 2em;
+          font-size: 1.8em;
           font-weight: bold;
           margin-bottom: 30px;
         }
         .image {
-          width: 170px;
-          height: 170px;
+          width: 120px;
+          height: 120px;
           object-fit: cover;
           border-radius: 600px;
-          margin-bottom: 20px;
+          margin-bottom: 6px;
         }
         
         .profile img{
@@ -587,31 +627,31 @@
   .Members {
     padding-bottom: 100px;
     .profile {
-      width: 180px;
-      height: 180px;
+      width: 140px;
+      height: 140px;
       border-radius: 500px;
     }
     padding-top: 40px;
     h1 {
-      font-size: 2.8em;
+      font-size: 2.1em;
       font-weight: bold;
       margin-bottom: 50px;
     }
     .home {
-      width: 28px;
-      height: 28px;
+      width: 22px;
+      height: 22px;
     }
     .prof-box {
       margin-top: 100px;
       .name {
         margin-top: 20px;
-        font-size: 2em;
-        margin-right: 10px;
+        font-size: 1.6em;
+        margin-right: 8px;
       }
       .desc {
-        margin-top: 20px;
-        font-size: 1.2em;
-        line-height: 30px;
+        margin-top: 16px;
+        font-size: 1em;
+        line-height: 26px;
         margin-bottom: 30px;
       }
     }
@@ -620,43 +660,48 @@
     .master-box {
       margin-top: 70px;
       h1 {
-        font-size: 2.3em;
+        font-size: 2em;
         margin-bottom: 50px;
       }
       .profile {
         border: 1px solid #acb0b7;
-        width: 140px;
-        height: 140px;
+        width: 110px;
+        height: 110px;
       }
       .container {
         width: 500px;
-        grid-template-columns: 300px 300px 300px; 
+        grid-template-columns:  250px  250px  250px;
         .item {
           margin-bottom: 50px;
           .name {
             margin-top: 20px;
             font-weight: bold;
-            font-size: 1.8em;
+            font-size: 1.4em;
           }
           .email {
             margin-top: 5px;
             line-height: 35px;
-            font-size: 1.1em;
+            font-size: 0.8em;
           }
           .mbti {
-            font-size: 1em;
+            font-size: 0.8em;
             border-radius: 4px;
             padding: 6px 12px;
           }
           .interest {
             margin-left: 10px;
-            font-size: 1em;
+            font-size: 0.8em;
             border-radius: 4px;
             padding: 6px 12px;
           }
         }
       }
     }
+  }
+  .tooltip {
+    font-size: 0.8em;
+    margin-top: 9px;
+    padding: 7px 11px;
   }
 
   .Publication {
@@ -666,13 +711,13 @@
       border-radius: 20px;
       padding: 20px 30px;
       p {
-        font-size: 1.3em;
+        font-size: 1.1em;
         line-height: 30px;
       }
     }
     .more {
       font-weight: bold;
-      font-size: 1.6em;
+      font-size: 1.2em;
     }
   }
 
@@ -713,68 +758,74 @@
 @media all and (max-width: 840px) {
   .Home {
     .blur {
-      width: 400px; 
-      height: 300px;  
+      width: 410px; 
+      height: 250px;  
       border-radius: 30px;
       object-fit: cover;
-      margin-top: 30px;
+      margin-top: 26px;
     }
     
     .intro {
-      margin-top: 60px;
-      width: 700px;
+      margin-top: 30px;
+      width: 510px;
       border-radius: 20px;
       padding: 20px 28px;
-      
+      // .profile {
+      //   width: 340px;
+      //   height: 200px;
+      //   margin-left: -20px;
+      //   margin-right: -170px;
+      //   object-fit: cover;
+      // }
       .profile {
-        width: 350px;
-        height: 200px;
-        margin-left: -20px;
-        margin-right: -160px;
+        width: 0px;
+        height: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
         object-fit: cover;
       }
       .title {
-        font-size: 1.4em;
+        font-size: 1.1em;
         margin-bottom: 10px;
       }
       p {
-        font-size: 1.2em;
-        line-height: 34px;
+        font-size: 0.8em;
+        line-height: 24px;
         text-align: left;
       }
     }
 
     .contact_button {
-      margin-top: 50px;
+      margin-top: 33px;
       margin-bottom: 100px;
-      padding: 18px 35px;
-      cursor: pointer;
-      font-size: 1.3em;
+      padding: 19px 36px;
+      font-size: 1.1em;
     }
   }
   
   .title-box {
     margin-top: 120px;
     h1 {
-      font-size: 2.3em;
-      margin-bottom: 30px;
+      font-size: 1.9em;
+      margin-bottom: 20px;
     }
     p {
       width: 500px;
-      font-size: 1.2em;
+      font-size: 0.9em;
       font-weight: 500;
-      line-height: 30px;
+      line-height: 26px;
     }
   }
 
   .Research {
     .top__contents {
+      display: flex;
       flex-direction: column;
-      margin-top: 60px;
+      margin-top: 40px;
       margin-bottom:70px;
       .card {
         box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
-        width: 400px;
+        width: 300px;
         height: max-content;
         border-radius: 20px;
         padding: 30px 40px;
@@ -784,10 +835,11 @@
         flex-direction: column;
         align-items: center;
         p {
+          height: max-content;
           font-size: 1.2em;
-          margin-top: 20px;
+          margin-top: 17px;
           text-align: center;
-          line-height: 30px;
+          line-height: 25px;
         }
         
         h1 {
@@ -796,11 +848,11 @@
           margin-bottom: 20px;
         }
         .image {
-          width: 150px;
-          height: 150px;
+          width: 120px;
+          height: 120px;
           object-fit: cover;
           border-radius: 600px;
-          margin-bottom: 10px;
+          margin-bottom: 3px;
         }
         
         .profile img{
@@ -819,25 +871,25 @@
     }
     padding-top: 40px;
     h1 {
-      font-size: 2.4em;
+      font-size: 1.9em;
       font-weight: bold;
       margin-bottom: 40px;
     }
     .home {
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
     }
     .prof-box {
       margin-top: 100px;
       .name {
         margin-top: 20px;
-        font-size: 2em;
-        margin-right: 10px;
+        font-size: 1.5em;
+        margin-right: 7px;
         font-weight: bold;
       }
       .desc {
         margin-top: 20px;
-        font-size: 1.1em;
+        font-size: 0.9em;
         line-height: 28px;
         margin-bottom: 30px;
       }
@@ -847,45 +899,50 @@
     .master-box {
       margin-top: 70px;
       h1 {
-        font-size: 2.1em;
+        font-size: 1.7em;
         font-weight: bold;
         margin-bottom: 50px;
       }
       .profile {
         border: 1px solid #acb0b7;
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
       }
       .container {
         width: 500px;
-        grid-template-columns: 300px 300px; 
+        grid-template-columns: 250px 250px; 
         .item {
           margin-bottom: 40px;
           .name {
             margin-top: 20px;
-            font-size: 1.7em;
+            font-size: 1.3em;
           }
           .email {
             margin-top: 5px;
-            line-height: 35px;
-            font-size: 1em;
+            line-height: 30px;
+            font-size: 0.8em;
           }
           .mbti {
             margin-top: 2px;
-            font-size: 0.9em;
+            font-size: 0.8em;
             border-radius: 4px;
-            padding: 6px 12px;
+            padding: 5px 10px;
           }
           .interest {
             margin-top: 2px;
             margin-left: 10px;
-            font-size: 0.9em;
+            font-size: 0.8em;
             border-radius: 4px;
-            padding: 6px 12px;
+            padding: 5px 10px;
           }
         }
       }
     }
+  }
+  .tooltip {
+    font-size: 0.7em;
+    margin-top: 9px;
+    padding: 6px 10px;
   }
 
   .Publication {
@@ -895,12 +952,12 @@
       border-radius: 20px;
       padding: 20px 25px;
       p {
-        font-size: 1.1em;
-        line-height: 27px;
+        font-size: 1em;
+        line-height: 25px;
       }
     }
     .more {
-      font-size: 1.5em;
+      font-size: 1.1em;
     }
   }
 
@@ -1009,7 +1066,7 @@
     h1 {
       width: 310px;
       text-align: center;
-      font-size: 1.8em;
+      font-size: 1.4em;
       margin-bottom: 20px;
     }
     p {
@@ -1023,8 +1080,8 @@
   .Research {
     .top__contents {
       flex-direction: column;
-      margin-top: 60px;
-      margin-bottom:70px;
+      margin-top: 30px;
+      margin-bottom: 60px;
       .card {
         box-shadow: 0 5px 18px -7px rgba(0,0,0,0.4);
         width: 230px;
@@ -1040,20 +1097,17 @@
           font-size: 0.9em;
           margin-top: 20px;
           text-align: center;
-          line-height: 23px;
+          line-height: 20px;
         }
-        
         h1 {
           font-size: 1.4em;
           font-weight: bold;
           margin-bottom: 20px;
         }
         .image {
-          width: 110px;
-          height: 110px;
-          object-fit: cover;
-          border-radius: 600px;
-          margin-bottom: 10px;
+          width: 100px;
+          height: 100px;
+          margin-bottom: 5px;
         }
         
         .profile img{
@@ -1072,7 +1126,7 @@
     }
     padding-top: 40px;
     h1 {
-      font-size: 2em;
+      font-size: 1.5em;
       margin-bottom: 30px;
     }
     .home {
@@ -1083,7 +1137,7 @@
       margin-top: 100px;
       .name {
         margin-top: 20px;
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin-right: 5px;
         font-weight: bold;
       }
@@ -1099,7 +1153,7 @@
     .master-box {
       margin-top: 70px;
       h1 {
-        font-size: 1.7em;
+        font-size: 1.3em;
         font-weight: bold;
         margin-bottom: 30px;
       }
@@ -1115,7 +1169,7 @@
           margin-bottom: 40px;
           .name {
             margin-top: 20px;
-            font-size: 1.3em;
+            font-size: 1em;
           }
           .email {
             margin-top: 2px;
@@ -1124,35 +1178,32 @@
           }
           .mbti {
             margin-top: 4px;
-            font-size: 0.8em;
+            font-size: 0.7em;
             border-radius: 4px;
-            padding: 5px 10px;
+            padding: 5px 9px;
           }
           .interest {
             margin-top: 4px;
             margin-left: 10px;
-            font-size: 0.8em;
+            font-size: 0.7em;
             font-weight: bold;
             border-radius: 4px;
-            padding: 5px 10px;
+            padding: 5px 9px;
           }
         }
       }
     }
 
     .tooltip {
-      white-space: pre-line;
-      display: none;
-      position: absolute;
       bottom: -20%;
       left: 50%;
-      font-size: 0.9em;
+      font-size: 0.7em;
       font-weight: 500;
       height: auto;
       width: 80px;
       letter-spacing: -0.25px;
       margin-top: 9px;
-      padding: 5px 7px;
+      padding: 4px 6px;
       text-align: center;
       z-index: 100;
       transform: translate(-44%, 110%);
