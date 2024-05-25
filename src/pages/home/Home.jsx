@@ -5,7 +5,6 @@ import './styles.scss';
 import '../styles.scss';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
-import Header from './Header';
 import NewsList from './NewsList';
 import RecruitingSection from './RecruitingSection';
 import i1 from 'assets/i1.png';
@@ -60,10 +59,14 @@ function Home() {
 
   return (
     <>
-      <div className='Home'>
-        <div className="black"></div>
+      <BgDiv className='Home'>
+        {/* <div className="black"></div> */}
         <div className="background"></div>
-        <Header />
+        <div className="title-box">
+          <h1><FormattedMessage id="welcome" /></h1>
+          <p><FormattedMessage id="intro1" /></p>
+          <p><FormattedMessage id="intro2" /></p>
+        </div>
         <NewsList newsData={data} onItemClick={clickHandler} />
         <RecruitingSection />
         <Link to="Contact" spy={true} smooth={true}>
@@ -71,7 +74,7 @@ function Home() {
             <FormattedMessage id="button" />
           </PointBox>
         </Link>
-      </div>
+      </BgDiv>
       <ModifyModal
         show={isModalVisible}
         onHide={() => setIsModalVisible(false)}
@@ -97,6 +100,9 @@ function Home() {
   );
 }
 
+const BgDiv = styled.div`
+  // background-color: ${({ theme }) => theme.bgColor};
+`;
 const NewsModalBox = styled.div`
   background-color: ${({ theme }) => theme.backgroundColor};
 `;

@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import Home from 'pages/home/Home';
 import Research from 'pages/Research';
 import Members from 'pages/Members';
-import Publication from 'pages/Publication';
+import Publication from 'pages/publication/Publication';
 import Contact from 'pages/Contact';
 import Gallery from 'pages/Gallery';
 import Header from 'components/Header';

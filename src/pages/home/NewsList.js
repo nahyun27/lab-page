@@ -23,12 +23,13 @@ const NewsList = ({ newsData, onItemClick }) => {
       <Title>🤗 ACE NEWS 🤗</Title>
       <div className="card-list">
         {currentItems.map((item, idx) => (
-          <NewsItem key={idx} item={item} idx={idx} onClick={onItemClick} />
+          <NewsItem key={idx} item={item} idx={(currentPage - 1) * itemsPerPage + idx } onClick={onItemClick} />
         ))}
       </div>
       <Pagination>
         {Array.from({ length: totalPages }, (_, index) => (
           <PageButton
+            className="pageButton"
             key={index}
             onClick={() => handlePageChange(index + 1)}
             isActive={index + 1 === currentPage}
@@ -42,15 +43,15 @@ const NewsList = ({ newsData, onItemClick }) => {
 };
 
 const NewsBox = styled.div`
-  background-color: ${({ theme }) => theme.bgColor};
+  background-color: ${({ theme }) => theme.backgroundColor};
   color: ${({ theme }) => theme.textColor};
   padding: 20px;
 `;
 
 const Title = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  // margin-bottom: 5px;
 `;
 
 const Pagination = styled.div`
@@ -65,9 +66,13 @@ const PageButton = styled.button`
   font-weight: bold;
   border-radius: 10px;
   border-width: 0px ;
-  padding: 5px 10px;
+  background-color: ${({ theme }) => theme.bgColor};
   margin: 0 5px;
   cursor: pointer;
+  &::active {
+    // background-color: ${({ theme }) => theme.pointColor};
+    color: ${({ theme }) => theme.pointColor};
+  }
   &:hover {
     // background-color: ${({ theme }) => theme.pointColor};
     color: ${({ theme }) => theme.pointColor};

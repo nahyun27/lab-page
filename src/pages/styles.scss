@@ -279,42 +279,6 @@
 }
 
 
-.Publication {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f6f9;
-  padding-bottom: 100px;
-  .paperCard {
-    width: 1100px;
-    // margin: 20px 0;
-    border-bottom: 1px solid #858585;
-    // border-radius: 20px;
-    padding: 30px 40px;
-    p {
-      display: inline;
-      font-size: 1.2em;
-      line-height: 32px;
-    }
-    .paper-link {
-      cursor: pointer;
-    }
-  }
-  .paperCard:last-of-type {
-    border-bottom: none;
-  }
-
-  .more {
-    margin-top: 10px;
-    cursor: pointer;
-    color: orange;
-    font-weight: bold;
-    font-size: 1.3em;
-    text-align: right;
-  }
-}
-
 
 .Gallery {
   padding-bottom: 200px;
@@ -619,21 +583,6 @@
     padding: 7px 11px;
   }
 
-  .Publication {
-    padding-bottom: 100px;
-    .paperCard {
-      width: 700px;
-      padding: 20px 30px;
-      p {
-        font-size: 1em;
-        line-height: 25px;
-      }
-    }
-    .more {
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-  }
 
   .Gallery {
     padding-bottom: 100px;
@@ -853,21 +802,6 @@
     padding: 6px 10px;
   }
 
-  .Publication {
-    padding-bottom: 100px;
-    .paperCard {
-      width: 500px;
-      padding: 20px 25px;
-      p {
-        font-size: 1em;
-        line-height: 25px;
-      }
-    }
-    .more {
-      font-size: 1.1em;
-    }
-  }
-
   .Gallery {
     padding-bottom: 100px;
     width: 100vw;
@@ -1077,21 +1011,6 @@
     }
   }
 
-  .Publication {
-    padding-bottom: 100px;
-    .paperCard {
-      width: 300px;
-      padding: 10px 16px;
-      p {
-        font-size: 0.6em;
-        line-height: 12px;
-      }
-    }
-    .more {
-      font-size: 1em;
-      padding-right: 20px;
-    }
-  }
   .register_modal_header {
     padding: 15px 0px;
     h2 {

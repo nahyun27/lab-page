@@ -15,7 +15,10 @@ const NewsItem = ({ item, idx, onClick }) => (
 );
 
 const BasicBox = styled.div`
-  background-color: ${({ theme }) => theme.bgColor};
+  &:hover {
+    background-color: ${({ theme }) => theme.bgColor};
+  }
+  background-color: ${({ theme }) => theme.backgroundColor};
 `;
 
 const GrayText = styled.div`
