@@ -1,7 +1,7 @@
 import './styles.scss';
 import React, {useState} from "react"
 import ai from 'assets/ai.jpg';
-import medical from 'assets/medical.webp';
+import applied from 'assets/applied.jpeg';
 import mobile from 'assets/mobile.jpg';
 import system from 'assets/system.jpg';
 import styled from 'styled-components';
@@ -26,9 +26,9 @@ function Research () {
       "desc": 'systemDesc',
     },
     {
-      "name": "medical",
-      "img": medical,
-      "desc": 'medicalDesc',
+      "name": "applied",
+      "img": applied,
+      "desc": 'appliedDesc',
     },
     // {
     //   "name": "Cyber Crime",
@@ -45,7 +45,7 @@ function Research () {
       </div>
       <div className="top__contents">
         {data.map((d, idx) => (
-          <BasicBox className="card">
+          <BasicBox key={idx} className="card">
             <h1><FormattedMessage id={d.name}/></h1>
             <img className='image' src={d.img} alt="" /> 
             <p><FormattedMessage id={d.desc}/></p>

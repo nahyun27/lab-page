@@ -24,11 +24,11 @@
   "ai": "AI Security",
   "mobile": "Mobile Security",
   "system": "System Security",
-  "medical": "System Security",
+  "applied": "Applied AI",
   "aiDesc": "Our research lab delves into the security aspects of AI systems and algorithms, addressing emerging threats and exploring innovative approaches with a particular focus on areas like Adversarial Attacks and usage of Explainable AI.",
   "mobileDesc": "Mobile devices play an indispensable role in modern society, making mobile security more crucial than ever. We focus on addressing vulnerabilities in apps and platforms, developing solutions to ensure the safe use of mobile devices.",
   "systemDesc": "System security is paramount in safeguarding various IT systems, including networks, OS, cloud systems, and IoT devices. Our lab is dedicated to developing innovative technologies and methods to tackle new challenges in system security.",
-  "medicalDesc": "Our lab is conducting innovative studies in the medical field by leveraging cutting-edge technologies. Our primary goal is to enhance patient health management using AI for disease prediction, organ segmentation, and symptom identification.",
+  "appliedDesc": "Our lab applies cutting-edge AI technologies across various industries. Our main goal is to enhance service quality through AI-driven disease prediction, image analysis, and data-driven decision-making.",
   "publications": "Representative Publications",
 
   "prof": "Professor",
@@ -60,6 +60,7 @@
   "hoon":  "Hoon Ji", 
   "minjae":  "Minjae Kang",
   "nahyun":  "Nahyun Kim",
+  "juyeon": "Juyeon Kim",
 
 
   "interest":  "Interest",
@@ -77,5 +78,21 @@
   "gunheeR":  "System Security, Side-Channel Analysis", 
   "hoonR":  "Drone Security, IoT Security", 
   "minjaeR":  "Network Security",
-  "nahyunR":  "AI Security"
+  "nahyunR":  "AI Security", 
+  "juyeonR": "Medical AI",
+
+  "t1":  "[Paper Accepted] USENIX Security 2024 - Prof. Lee", 
+  "t2":  "[Paper Accepted] IEEE Internet of Things Journal - Sungbin Park", 
+  "t3":  "[Paper Accepted] USENIX Security 2023 - Prof. Lee", 
+  "t4":  "Selected as a recipient of the Engineering and Science Academic Research Support Program - Nahyun Kim", 
+  "t5":  "[Paper Accepted] MDPI Sensors 2024 - Minjae Kang", 
+  "t6":  "Security", 
+  "t7":  "Security", 
+  "c1":  "Prof. Lee's paper, \"DARKFLEECE: Probing the Dark Side of Android Subscription Apps\", has been accepted to USENIX 2024 (Top-tier cyber security conference). Congratulations Professor!\n\nThe paper has been published due to academic contributions on analyzing fleeceware: conducting a comprehensive landscape analysis of its characteristics and developing an automated detection tool for identifying it.", 
+  "c2":  "Ph.D. Student Sungbin Park's paper, \"STATION: Gesture-Based Authentication for Voice Interfaces\", has been accepted to the IEEE Internet of Things Journal (IF: 10.6, JCR: 2.2%). Congratulations Sungbin!\n\nThe paper has been published due to academic contributions to developing the first usability-enhanced authentication mechanisms for voice interface users based on the SONAR technique.", 
+  "c3":  "Congratulations to Professor Lee on the acceptance of the paper \"Aliasing Backdoor Attacks on Pre-trained Models\" for publication at one of the top-tier conferences in the field of information security, USENIX Security 2023. \n\nThe paper reveals a new attack surface known as the aliasing phenomenon in strided layers of pre-trained models and proposes the first-ever backdoor attack exploiting this phenomenon. The academic contribution of this work has been recognized, leading to its publication at USENIX Security 2023.", 
+  "c4":  "The academic and industrial sectors are keenly focusing on the news that student Kim Na-hyun has been selected as a recipient of the 2024 Science and Engineering Academic Research Support Project. Kim Na-hyun's research project, titled \"Stealthy and Intensive Black-Box Adversarial Attack on Video Classifiers using Motion Information,\" has been recognized for its innovative idea that outlines the future direction of research in the field of engineering. This recognition is considered a high honor awarded to young researchers leading the development of the engineering field.\n\nThe National Research Foundation of Korea's Science and Engineering Academic Research Support Project aims to identify and support researchers with creative and innovative research ideas, thereby fostering the qualitative growth of national science and technology. Upon receiving the news of her selection, Kim Na-hyun expressed, \"I am very honored to receive this support from the National Research Foundation of Korea, and I am delighted at the opportunity to conduct more in-depth research through this support.\"\n\nThis expression of gratitude and excitement underscores the significance of the support in enabling her to advance her research further, highlighting the project's potential to contribute significantly to the engineering field and beyond.", 
+  "c5":  "Congratulations! The paper by student Minjae Kang titled \"A Survey on Satellite Communication System Security,\" has been accepted for publication in the journal MDPI Sensors (IF: 3.9), in the field of ENGINEERING, ELECTRICAL & ELECTRONIC. This paper conducts a comprehensive survey on the security of satellite communication systems and has been recognized for its academic contribution to the field. It systematically analyzes the current issues and future directions of security in satellite communication systems, making significant contributions to research and development in this area.", 
+  "c6":  "Security", 
+  "c7":  "Security"
 }

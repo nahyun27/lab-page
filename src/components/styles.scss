@@ -13,14 +13,14 @@
     width: 1500px;
     p {
       line-height: 40px;
-      font-size: 1.6em;
+      font-size: 1.4em;
       font-weight: bold;
     }
     .infos {
-      margin-top: 20px;
+      margin-top: 13px;
       p {
-        line-height: 35px;
-        font-size: 1.2em;
+        line-height: 30px;
+        font-size: 1em;
         font-weight: 400;
       }
     }
@@ -29,8 +29,8 @@
 
 
 .containerG {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   .slick-slide div { 
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
     margin-bottom: 10px;
   }
   .slick-dots {
-    margin-top: 30px;
+    margin-top: 20px;
     button::before {
       color: #888;
     }
@@ -56,28 +56,61 @@
   
   .slick-dots li {
     display: inline-block; /* li 요소들을 가로로 표시합니다. */
-    margin: 0 5px; /* 각각의 li 요소 사이의 간격을 조절합니다. */
+    margin: 0 2px; /* 각각의 li 요소 사이의 간격을 조절합니다. */
     padding: 0; /* 불필요한 패딩을 제거합니다. */
     list-style: none; /* 리스트 마커를 제거합니다. */
   }
 }
 
 .card-list {
-  padding: 20px 30px;
-  .card {
+  padding: 20px 25px;
+  .paperCard {
     width: 1000px;
-    margin: 20px 0;
-    border-radius: 20px;
-    padding: 30px 40px;
+    padding: 12px 30px;
+    border-bottom: 1px solid #858585;
     p {
       display: inline;
-      font-size: 1.1em;
+      font-size: 1em;
       line-height: 28px;
     }
     .paper-link {
       cursor: pointer;
     }
   }
+}
+
+.newsBox {
+  padding: 20px 25px;
+  width: 800px;
+  .textBox {
+    padding: 20px 24px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    .title {
+      font-size: 1.5em;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+    .date {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    .contents {
+      margin-top: 10px;
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    .newsImg {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+}
+
+.paperCard:last-of-type {
+  border-bottom: none !important;
 }
 
 .map {
@@ -90,7 +123,7 @@
 }
 
 .logo {
-  height: 60px;
+  height: 50px;
   pointer-events: none;
   margin-right: 10px;
 }
@@ -128,17 +161,16 @@
 
 
 .navbar {
-  height: 85px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1400px;
-  z-index: 100;
   z-index: 22;
 }
 
 .navbar__logo {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   list-style: none;
   padding-left: 0px;
@@ -154,8 +186,8 @@
 }
 
 .navbar__menu li {
-  margin-left: 10px;
-  font-size: 1.3em;
+  margin-left: 8px;
+  font-size: 1.2em;
   font-weight: 500;
   padding: 8px 12px;
   border-radius: 50px;
@@ -187,8 +219,8 @@ input[id="menuicon"] {
 
 input[id="menuicon"] + label {
   display: block;
-  width: 30px;
-  height: 25px;
+  width: 26px;
+  height: 20px;
   position: fixed;
   right: -10%;
   cursor: pointer;
@@ -248,11 +280,25 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
   margin-top: 80px;
 }
 
-.sidebar__menu a > li {
+.submit {
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #292c3a;
+  display: flex;
+  border-width: 0;
+  justify-content: center;
+  text-align: center;
   font-size: 1.2em;
+  font-weight: bold;
+  color: white; 
+
+}
+.sidebar__menu a > li {
+  font-size: 1em;
   padding: 10px 20px;
   border-radius: 10px;
-  margin-bottom: 13px;
+  margin: 2px;
   font-weight: 600;
   text-align: center;
   display: flex;
@@ -264,12 +310,12 @@ input[id="menuicon"]:checked + label span:nth-child(3) {
   padding: 10px 20px;
 }
 .sidebar__menu p{
-  font-size: 1.7em;
+  font-size: 1.3em;
   padding: 10px 20px;
 }
 
 .noMargin p{
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 .noMargin p, form button{
   font-size: 1.4em;
@@ -293,7 +339,7 @@ input[id="menuicon"] + label span {
   display: block;
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 2px;
   border-radius: 30px;
   background: #757575;
   transition: all 0.35s;
@@ -320,7 +366,11 @@ input[id="menuicon"] + label span {
 }
 
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1450px) {
+  .containerG {
+    width: 350px;
+    height: 350px;
+  }
   .Header {
     .navbar {
       padding: 0 40px;
@@ -329,42 +379,97 @@ input[id="menuicon"] + label span {
       }
       .navbar__menu li {
         margin-left: 4px !important;
-        font-size: 1.2em;
+        font-size: 1.1em;
         cursor: pointer;
       }
       
       .logo {
-        height: 50px;
+        height: 43px;
       }
     }
   }
+  
 }
 
 
 @media screen and (max-width: 1250px) {
+  .register_modal_header h2 {
+    color: white;
+    font-size: 1.5em !important;
+    font-weight: bold;
+  }
+
+  .banselect {
+    font-size: 1.2em !important;
+  }
+
+  .newsBox {
+    padding: 20px 25px;
+    width: 680px;
+    .textBox {
+      padding: 20px 24px;
+      .title {
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 15px;
+      }
+      .date {
+        font-weight: 400;
+        font-size: 0.9em;
+        margin-bottom: 12px;
+      }
+      .contents {
+        margin-top: 7px;
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .newsImg {
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  .containerG {
+    width: 300px;
+    height: 300px;
+    .slick-list {
+      height: 300px;
+    }
+    .slick-dots li {
+      width: 25px;
+      height: 25px;
+      display: inline-block; 
+      margin: 0px; 
+      padding: 0;
+      list-style: none;
+    }
+  }
   .Header {
     .noMargin {
       padding: 0 !important;
       padding-left: 5px !important;
     }
     .navbar {
+      height: 70px;
       padding: 0 40px;
       .logo-writing {
         font-size: 1.2em;
       }
       .navbar__menu li {
         margin-left: 1px !important;
-        font-size: 1.1em;
+        font-size: 1em;
         cursor: pointer;
       }
       
       .logo {
-        height: 50px;
+        height: 35px;
       }
       .name-box {
-        margin-left: 0px;
+        margin-left: 3px;
         .name {
-          font-size: 0px;
+          font-size: 26px;
         }
         .desc {
           font-size: 0px;
@@ -385,20 +490,50 @@ input[id="menuicon"] + label span {
   }
     
   .card-list {
-    padding: 20px 30px;
-    .card {
+    padding: 18px 20px;
+    .paperCard {
       width: 700px;
-      border-radius: 20px;
-      padding: 20px 30px;
+      padding: 10px 25px;
       p {
-        font-size: 1.3em;
-        line-height: 30px;
+        font-size: 0.9em;
+        line-height: 25px;
       }
     }
   }
 }
 
 @media screen and (max-width: 840px) {
+  .register_modal_header h2 {
+    font-size: 1.3em !important;
+  }
+  .newsBox {
+    padding: 15px 15px;
+    width: 475px;
+    .textBox {
+      padding: 15px 15px;
+      .title {
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      .date {
+        font-weight: 400;
+        font-size: 0.8em;
+        margin-bottom: 5px;
+      }
+      .contents {
+        margin-top: 7px;
+        font-size: 0.7em;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .newsImg {
+        margin-top: 10px;
+      }
+    }
+  }
+  
   .containerG {
     width: 220px;
     height: 220px;
@@ -408,11 +543,27 @@ input[id="menuicon"] + label span {
       margin-bottom: 10px;
     }
     .slick-dots {
-      margin-top: 30px;
+      text-align: center;
+    }
+    .slick-list {
+      height: 220px;
+    }
+    .slick-dots li {
+      width: 20px;
+      height: 20px;
+      display: inline-block; 
+      margin: 0 1px; 
+      padding: 0;
+      list-style: none;
     }
     .slick-prev, .slick-next {
       font-size: 15px !important;
     }
+  }
+
+
+  .banselect {
+    padding: 7px !important;
   }
 
   input[id="menuicon"] + label {
@@ -428,14 +579,13 @@ input[id="menuicon"] + label span {
   }
     
   .card-list {
-    padding: 20px 30px;
-    .card {
-      width: 500px;
-      border-radius: 20px;
-      padding: 20px 25px;
+    padding: 16px 16px;
+    .paperCard {
+      width: 450px;
+      padding: 10px 13px;
       p {
-        font-size: 1.1em;
-        line-height: 27px;
+        font-size: 0.8em;
+        line-height: 20px;
       }
     }
   }
@@ -443,14 +593,14 @@ input[id="menuicon"] + label span {
   .Footer {
     .contents_root {
       p {
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: bold;
       }
       .infos {
-        margin-top: 20px;
+        margin-top: 15px;
         p {
-          line-height: 30px;
-          font-size: 1.2em;
+          line-height: 26px;
+          font-size: 0.9em;
           font-weight: 400;
         }
       }
@@ -458,7 +608,7 @@ input[id="menuicon"] + label span {
   }
 
   .navbar {
-    height: 70px;
+    height: 65px;
     padding: 0 20px;
   }
   .logo {
@@ -478,6 +628,37 @@ input[id="menuicon"] + label span {
 
 
 @media screen and (max-width: 500px) {
+  .register_modal_header h2 {
+    font-size: 1em !important;
+  }
+  
+  .newsBox {
+    padding: 10px 10px;
+    width: 315px;
+    .textBox {
+      padding: 10px 10px;
+      .title {
+        font-size: 0.8em;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 7px;
+      }
+      .date {
+        font-weight: 400;
+        font-size: 0.7em;
+        margin-bottom: 5px;
+      }
+      .contents {
+        margin-top: 7px;
+        font-size: 0.6em;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .newsImg {
+        margin-top: 10px;
+      }
+    }
+  }
   .containerG {
     width: 135px;
     height: 135px;
@@ -487,7 +668,7 @@ input[id="menuicon"] + label span {
       margin-bottom: 10px;
     }
     .slick-dots {
-      margin-top: 30px;
+      margin-top: 0px;
       button::before {
         color: #888;
       }
@@ -502,8 +683,12 @@ input[id="menuicon"] + label span {
     .slick-dots {
       text-align: center;
     }
-    
+    .slick-list {
+      height: 135px;
+    }
     .slick-dots li {
+      width: 10px;
+      height: 10px;
       display: inline-block; 
       margin: 0 1px; 
       padding: 0;
@@ -520,17 +705,15 @@ input[id="menuicon"] + label span {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-    
+
   .card-list {
     padding: 10px 12px;
-    .card {
+    .paperCard {
       width: 290px;
-      border-radius: 20px;
-      padding: 10px 16px;
-      margin: 15px;
+      padding: 6px 10px;
       p {
-        font-size: 0.8em;
-        line-height: 20px;
+        font-size: 0.6em;
+        line-height: 13px;
       }
     }
   }
@@ -540,16 +723,16 @@ input[id="menuicon"] + label span {
     .contents_root {
       margin-left: 30px;
       p {
-        width: 360px;
-        font-size: 1.1em;
+        width: 300px;
+        font-size: 1em;
         line-height: 28px;
         font-weight: bold;
       }
       .infos {
-        margin-top: 15px;
+        margin-top: 12px;
         p {
-          line-height: 26px;
-          font-size: 0.9em;
+          line-height: 22px;
+          font-size: 0.8em;
           font-weight: 400;
         }
       }

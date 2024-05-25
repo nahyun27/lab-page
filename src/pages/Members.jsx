@@ -12,6 +12,7 @@ import jiwon from 'assets/members/jiwon.jpeg';
 import taewan from 'assets/members/taewan.jpeg';
 import jiwonB from 'assets/members/jiwonB.jpeg';
 import sungju from 'assets/members/sungju.png';
+import sungjuB from 'assets/members/sungjuB.jpeg';
 import sungbin from 'assets/members/sungbin.png';
 import gunhee from 'assets/members/gunhee.png';
 import gunheeB from 'assets/members/gunheeB.jpeg';
@@ -22,6 +23,7 @@ import hoon from 'assets/members/hoon.png';
 import minjae from 'assets/members/minjae.jpeg';
 import cheng from 'assets/members/cheng.jpeg';
 import gagyeom from 'assets/members/gagyeom.jpeg';
+import juyeon from 'assets/members/juyeon.jpeg';
 import yonghyun from 'assets/members/yonghyun.jpeg';
 import yonghyunB from 'assets/members/yonghyunB.png';
 import jungmin from 'assets/members/jungmin.png';
@@ -54,7 +56,7 @@ function Members ({ toggle, mode }) {
     {
       "name": "sungju",
       "image": sungju,
-      "imageB": sungju,
+      "imageB": sungjuB,
       "email": 'tjdwn77777@hanyang.ac.kr',
       "mbti": 'MATH',
       "interest": 'sungjuR',
@@ -149,9 +151,17 @@ function Members ({ toggle, mode }) {
       "mbti": 'ENTJ',
       "interest": 'taewanR',
     }, 
+    // {
+    //   "name": "juyeon",
+    //   "image": juyeon,
+    //   "imageB": juyeon,
+    //   "email": 'kimjuyeon0912@gmail.com',
+    //   "mbti": 'ESTJ',
+    //   "interest": 'juyeonR',
+    // }, 
   ]
   return(
-    <div className="Members">
+    <BasicBox className="Members">
       <div className="prof-box">
         <h1><FormattedMessage id="prof" /></h1>
         <img className='profile' src={prof} alt="" />
@@ -169,7 +179,7 @@ function Members ({ toggle, mode }) {
         <h1><FormattedMessage id="phd" /></h1>
         <div className='container'>
           {phds.map((p, idx) => (
-            <div className='item'>
+            <div key={idx} className='item'>
               <img 
                 onMouseOver={() => {setIsListHover2(true); setNumber2(idx)}}
                 onMouseOut={() => setIsListHover2(false)}
@@ -177,7 +187,7 @@ function Members ({ toggle, mode }) {
               <p className='name'><FormattedMessage id={p.name} /></p>
               <p className='email'>{p.email}</p>
               <div className='row-box'>
-                <Tooltip message={p.mbti}>
+                <Tooltip translate={false} message={p.mbti}>
                   <MBTIBox className='mbti'>MBTI</MBTIBox>
                 </Tooltip>
                 <Tooltip message={p.interest}>
@@ -195,7 +205,7 @@ function Members ({ toggle, mode }) {
         <h1><FormattedMessage id="master" /></h1>
         <div className='container'>
           {masters.map((m, idx) => (
-            <div className='item'>
+            <div key={idx} className='item'>
               <img  
               onMouseOver={() => {setIsListHover(true); setNumber(idx)}}
               onMouseOut={() => setIsListHover(false)}
@@ -205,7 +215,7 @@ function Members ({ toggle, mode }) {
               {/* <p className='email'>{m.mbti}</p>
               <p className='email'><FormattedMessage id={m.interest}/></p> */}
               <div className='row-box'>
-                <Tooltip message={m.mbti}>
+                <Tooltip translate={false} message={m.mbti}>
                   <MBTIBox className='mbti'>MBTI</MBTIBox>
                 </Tooltip>
                 <Tooltip message={m.interest}>
@@ -218,22 +228,36 @@ function Members ({ toggle, mode }) {
           }
         </div>
       </div>
-    </div>
+    </BasicBox>
   );
 }
 
 export default Members;
 
 
-const Tooltip = ({ children, message }) => {
-  return (
-    <Container>
-      {children}
-      <div className="tooltip"><FormattedMessage id={message}/></div>
-    </Container>
-  );
+const Tooltip = ({ children, translate=true, message }) => {
+  if (translate) {
+    return (
+      <Container>
+        {children}
+        <div className="tooltip"><FormattedMessage id={message}/></div>
+      </Container>
+    );
+  } else {
+    return (
+      <Container>
+        {children}
+        <div className="tooltip">{message}</div>
+      </Container>
+    );
+
+  }
 };
 
+
+const BasicBox = styled.div`
+  background-color: ${({theme}) => theme.backgroundColor}; 
+`;
 
 const Container = styled.div`
   position: relative;

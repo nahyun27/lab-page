@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 import key from 'assets/key.png';
 import security from 'assets/security.jpg';
 import styled from 'styled-components';
-import Home from 'pages/Home';
+import Home from 'pages/home/Home';
 import Research from 'pages/Research';
 import Members from 'pages/Members';
 import Publication from 'pages/Publication';
@@ -26,7 +26,7 @@ function Main() {
         <Members position="relative" id="Members" toggle={toggleTheme} mode={themeMode} />
         <Publication position="relative" id="Publication" toggle={toggleTheme} mode={themeMode} />
         <Gallery position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} />
-        <Contact position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} />
+        {/* <Contact position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} /> */}
         <Footer toggle={toggleTheme} mode={themeMode} />
         <Header toggle={toggleTheme} mode={themeMode} />
     </div>

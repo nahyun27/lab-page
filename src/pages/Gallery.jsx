@@ -25,16 +25,34 @@ import p20 from 'assets/gallery/020.jpeg';
 import p21 from 'assets/gallery/021.jpeg';
 import p22 from 'assets/gallery/022.png';
 import food from 'assets/gallery/food.jpeg';
+import bread from 'assets/gallery/bread.jpeg';
+import ricecake from 'assets/gallery/ricecake.jpeg';
+import snowman from 'assets/gallery/snowman.jpeg';
+import bear from 'assets/gallery/bear.jpeg';
+import pochacco from 'assets/gallery/pochacco.jpeg';
+import group from 'assets/gallery/group.png';
+import group2 from 'assets/gallery/group2.png';
+import snack from 'assets/gallery/snack.jpeg';
+import duck from 'assets/gallery/duck.jpeg';
+import duck2 from 'assets/gallery/duck2.jpeg';
+import duck3 from 'assets/gallery/duck3.jpeg';
+import eat from 'assets/gallery/eat.jpeg';
+import eat2 from 'assets/gallery/eat2.jpeg';
+import lab from 'assets/gallery/lab-image.jpeg';
+import b1 from 'assets/gallery/blossom1.jpeg';
+import b3 from 'assets/gallery/blossom3.jpeg';
+import b_erica from 'assets/gallery/blossom_erica.jpeg';
+import b_ace from 'assets/gallery/blossom_ace.jpeg';
 
 function Gallery() {
 
-  const photos1 = [ p1, p19, p20, p3, p14, ]
-  const photos2 = [ p7, food, p11, p9, p12, p2]
-  const photos3 = [ p8, p18, p15, p16, p17]
-  const photos4 = [ p13, p21, p22, p6, p10,]
+  const photos1 = [ lab, p1, p2, p19, p20, p3, p14, snack, pochacco]
+  const photos2 = [ p8, eat, eat2, group, group2, p13, p21, p22, bear]
+  const photos3 = [ b1, b_ace, b_erica, p18, snowman, duck, duck2, duck3, p16,]
+  const photos4 = [ p7, food, ricecake, bread, p11, p9, p12, p10, p15,]
   
   return (
-    <div className='Gallery'>
+    <Background className='Gallery'>
       <div className='title-box'>
         <h1><FormattedMessage id="Gallery" /></h1> 
         <p><FormattedMessage id="gal1" /></p>
@@ -59,7 +77,7 @@ function Gallery() {
           <CardSlider photos={photos4}/>
         </div>
       </div>
-    </div>
+    </Background>
   );
 }
 
@@ -67,4 +85,9 @@ export default Gallery;
 
 const GrayBox = styled.div`
   background-color: ${({theme}) => theme.bgColor}; 
+`;
+
+
+const Background = styled.div`
+  background-color: ${props => props.theme.backgroundColor};
 `;

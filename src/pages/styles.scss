@@ -27,6 +27,19 @@
   margin-top: 10px;
 }
 
+.pw-box {
+  width: 400px;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  .id-input {
+    width: 350px;
+    height: 20px;
+    padding: 4px;
+  }
+}
 
 
 .row-box {
@@ -52,88 +65,19 @@
   align-items: center;
   justify-content: center;
   h1 {
-    font-size: 2.6em;
+    font-size: 2.3em;
     font-weight: bold;
     margin-bottom: 30px;
   }
   p {
     text-align: center;
     width: 1000px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
-    line-height: 34px;
+    line-height: 31px;
   }
 }
 
-.Home {
-  width: 100vw;
-  padding-top: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  .title-box {
-    margin:0
-  }
-  h1 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .blur {
-    width: 660px; 
-    height: 390px;  
-    border-radius: 30px;
-    object-fit: cover;
-    margin-top: 30px;
-  }
-  
-  .intro {
-    margin-top: 40px;
-    width: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    padding: 20px 38px;
-    
-    .profile {
-      width: 430px;
-      height: 260px;
-      margin-right: -220px;
-      object-fit: cover;
-    }
-    p {
-      font-size: 1.2em;
-      font-weight: normal;
-      line-height: 35px;
-      text-align: left;
-    }
-    .title {
-      font-size: 1.4em;
-      font-weight: 500;
-      text-align: left;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-  }
-  .contact_button {
-    margin-top: 40px;
-    box-shadow: 0 10px 25px -7px rgba(0,0,0,0.7);
-    margin-bottom: 100px;
-    padding: 25px 45px;
-    border-radius: 100px;
-    border-width: 0;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.5em;
-  }
-}
-.home .icon:hover {
-  opacity: 50%;
-}
 
 .Members {
   padding-bottom: 100px;
@@ -266,7 +210,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    top: -6px;
+    top: -5px;
     width: 0;
     z-index: 1;
   }
@@ -279,7 +223,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    top: -10px;
+    top: -8px;
     width: 0;
     z-index: 0;
   }
@@ -342,10 +286,11 @@
   align-items: center;
   background-color: #f4f6f9;
   padding-bottom: 100px;
-  .card {
+  .paperCard {
     width: 1100px;
-    margin: 20px 0;
-    border-radius: 20px;
+    // margin: 20px 0;
+    border-bottom: 1px solid #858585;
+    // border-radius: 20px;
     padding: 30px 40px;
     p {
       display: inline;
@@ -356,7 +301,12 @@
       cursor: pointer;
     }
   }
+  .paperCard:last-of-type {
+    border-bottom: none;
+  }
+
   .more {
+    margin-top: 10px;
     cursor: pointer;
     color: orange;
     font-weight: bold;
@@ -373,16 +323,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .slick-list{
+    border-radius: 10px;
+  }
   .cardCover {
     width: 400px;
     overflow: hidden;
     border-width: 0;
-  
     .card {
       align-items: center;
-      width: 400px;
-      height: 400px;
+      width: 380px;
+      height: 380px;
       object-fit: cover; 
+      margin-bottom: 0;
+      padding-bottom: 0;
       img {
         object-fit: cover;
       }
@@ -402,21 +356,25 @@
   justify-content: center;
   align-items: center;
   background-color: #f4f6f9;
+  .backImage {
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 10px;
+  }
   .info-box {
-    .row-box {
-      justify-content: flex-start;
-      text-align: left;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    width: 900px;
-    margin: 40px 0;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: ceenter;
+    justify-content: center;
     .info-text {
-      font-size: 1.3em !important;
+      line-height: 30px;
+      font-size: 1em !important;
+      text-align: center;
     }
   }
   .icon {
-    width: 40px;
+    width: 34px;
     cursor: pointer;
     margin-right: 20px;
   }
@@ -430,6 +388,18 @@
   }
   .title {
     color: #000,
+  }
+  .welcomeBtn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border-width: 0;
+    cursor: pointer;
+    p {
+      color: #fff;
+      font-size: 1em;
+      font-weight: 600;
+    }
   }
 }
 
@@ -451,46 +421,29 @@
 }
 
 @media all and (max-width: 1450px) {
-  .Home {
-    padding-top: 130px;
-    .blur {
-      width: 580px; 
-      height: 350px;  
-      border-radius: 30px;
-      object-fit: cover;
-      margin-top: 30px;
-    }
+  .Gallery {
+    padding-bottom: 100px;
+    width: 100vw;
+    .cardCover {
+      width: 350px;
+      overflow: hidden;
+      border-width: 0;
     
-    .intro {
-      margin-top: 30px;
-      width: 900px;
-      border-radius: 20px;
-      padding: 20px 28px;
-      
-      .profile {
+      .card {
+        align-items: center;
         width: 350px;
-        height: 200px;
-        margin-left: -20px;
-        margin-right: -160px;
-        object-fit: cover;
-      }
-      .title {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 1em;
-        line-height: 30px;
-        text-align: left;
+        height: 350px;
+        object-fit: cover; 
+        img {
+          object-fit: cover;
+        }
       }
     }
-    .contact_button {
-      margin-top: 35px;
-      margin-bottom: 100px;
-      padding: 21px 40px;
-      font-size: 1.3em;
+    .cardBox {
+      height: max-content;
     }
   }
+
   .Research {
     .card {
       width: 240px;
@@ -516,49 +469,11 @@
 }
 
 @media all and (max-width: 1250px) {
-  .Home {
-    .blur {
-      width: 540px; 
-      height: 320px;  
-      border-radius: 30px;
-      object-fit: cover;
-      margin-top: 30px;
-    }
-    .intro {
-      margin-top: 30px;
-      width: 740px;
-      border-radius: 20px;
-      padding: 20px 28px;
-      .profile {
-        width: 350px;
-        height: 200px;
-        margin-left: -20px;
-        margin-right: -160px;
-        object-fit: cover;
-      }
-      .title {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 1em;
-        line-height: 26px;
-        text-align: left;
-      }
-    }
-    .contact_button {
-      margin-top: 33px;
-      margin-bottom: 100px;
-      padding: 20px 38px;
-      font-size: 1.2em;
-    }
-  }
-  
 
   .title-box {
     margin-top: 120px;
     h1 {
-      font-size: 2.1em;
+      font-size: 2em;
       font-weight: bold;
       margin-bottom: 25px;
     }
@@ -706,13 +621,12 @@
 
   .Publication {
     padding-bottom: 100px;
-    .card {
+    .paperCard {
       width: 700px;
-      border-radius: 20px;
       padding: 20px 30px;
       p {
-        font-size: 1.1em;
-        line-height: 30px;
+        font-size: 1em;
+        line-height: 25px;
       }
     }
     .more {
@@ -721,18 +635,48 @@
     }
   }
 
+  .Gallery {
+    padding-bottom: 100px;
+    width: 100vw;
+    .cardCover {
+      width: 300px;
+      overflow: hidden;
+      border-width: 0;
+    
+      .card {
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        object-fit: cover; 
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    .cardBox {
+      height: max-content;
+    }
+  }
+
   .Contact {
     padding-bottom: 200px;
     width: 100vw;
-    .info-box {
-      .row-box {
-        margin-bottom: 10px;
-      }
-      width: 600px;
-      margin: 40px 0;
-    .info-text {
-      font-size: 1.4em !important;
+    .backImage {
+      margin-top: 20px;
+      width: 400px;
+      border-radius: 10px;
     }
+    .info-box {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: ceenter;
+      justify-content: center;
+      .info-text {
+        line-height: 27px;
+        font-size: 0.9em !important;
+        text-align: center;
+      }
     }
     .icon {
       width: 30px;
@@ -742,71 +686,35 @@
       padding: 8px 12px;
       border-radius: 20px;
       background-color: #ffffff7a;
-      border: #3E53BF 1px solid;
+      // border: #3E53BF 1px solid;
       margin-top: 50px;
       font-weight: bold;
     }
     .title {
       color: #000,
     }
+
+    .welcomeBtn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      border-width: 0;
+      cursor: pointer;
+      p {
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: 600;
+      }
+    }
   }
-
-
 }
 
 
 @media all and (max-width: 840px) {
-  .Home {
-    .blur {
-      width: 410px; 
-      height: 250px;  
-      border-radius: 30px;
-      object-fit: cover;
-      margin-top: 26px;
-    }
-    
-    .intro {
-      margin-top: 30px;
-      width: 510px;
-      border-radius: 20px;
-      padding: 20px 28px;
-      // .profile {
-      //   width: 340px;
-      //   height: 200px;
-      //   margin-left: -20px;
-      //   margin-right: -170px;
-      //   object-fit: cover;
-      // }
-      .profile {
-        width: 0px;
-        height: 100px;
-        margin-left: 0px;
-        margin-right: 0px;
-        object-fit: cover;
-      }
-      .title {
-        font-size: 1.1em;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 0.8em;
-        line-height: 24px;
-        text-align: left;
-      }
-    }
-
-    .contact_button {
-      margin-top: 33px;
-      margin-bottom: 100px;
-      padding: 19px 36px;
-      font-size: 1.1em;
-    }
-  }
-  
   .title-box {
     margin-top: 120px;
     h1 {
-      font-size: 1.9em;
+      font-size: 1.8em;
       margin-bottom: 20px;
     }
     p {
@@ -947,9 +855,8 @@
 
   .Publication {
     padding-bottom: 100px;
-    .card {
+    .paperCard {
       width: 500px;
-      border-radius: 20px;
       padding: 20px 25px;
       p {
         font-size: 1em;
@@ -986,19 +893,22 @@
 
   .Contact {
     padding-bottom: 100px;
+    
     .info-box {
-      .row-box {
-        margin-bottom: 10px;
+      display: flex;
+      margin-top: 18px;
+      flex-direction: column;
+      align-items: ceenter;
+      justify-content: center;
+      .info-text {
+        line-height: 23px;
+        font-size: 0.85em !important;
+        text-align: center;
       }
-      width: 550px;
-      margin: 30px 0;
-    .info-text {
-      font-size: 1.3em !important;
-    }
     }
     .icon {
-      width: 30px;
-      margin-right: 20px;
+      width: 25px;
+      margin-right: 14px;
     }
     .customoverlay {
       padding: 8px 12px;
@@ -1018,55 +928,12 @@
 
 
 @media all and (max-width: 500px) {
-  .Home {
-    .blur {
-      width: 300px; 
-      height: 240px;  
-      border-radius: 30px;
-      object-fit: cover;
-      margin-top: 30px;
-    }
-    padding-top: 100px;
-    
-    .intro {
-      margin-top: 40px;
-      width: 290px;
-      border-radius: 20px;
-      padding: 16px 18px;
-      
-      .profile {
-        width: 0px;
-        height: 100px;
-        margin-left: 0px;
-        margin-right: 0px;
-        object-fit: cover;
-      }
-      .title {
-        font-size: 1.1em;
-        margin-bottom: 10px;
-      }
-      p {
-        width: 280px;
-        font-size: 0.8em;
-        line-height: 20px;
-        text-align: left;
-      }
-    }
-    .contact_button {
-      margin-top: 50px;
-      margin-bottom: 100px;
-      padding: 15px 30px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-  }
-  
   .title-box {
     margin-top: 100px;
     h1 {
       width: 310px;
       text-align: center;
-      font-size: 1.4em;
+      font-size: 1.3em;
       margin-bottom: 20px;
     }
     p {
@@ -1212,14 +1079,12 @@
 
   .Publication {
     padding-bottom: 100px;
-    .card {
+    .paperCard {
       width: 300px;
-      border-radius: 20px;
       padding: 10px 16px;
-      margin: 15px;
       p {
-        font-size: 0.9em;
-        line-height: 20px;
+        font-size: 0.6em;
+        line-height: 12px;
       }
     }
     .more {
@@ -1260,15 +1125,19 @@
 
   .Contact {
     padding-bottom: 100px;
-    .info-box {
-      .row-box {
-        margin-bottom: 2px;
-      }
-      width: 310px;
-      margin: 30px 0;
-    .info-text {
-      font-size: 0.9em !important;
+
+    .backImage {
+      margin-top: 20px;
+      width: 250px;
+      border-radius: 10px;
     }
+    .info-box {
+      margin-top: 15px;
+      .info-text {
+        line-height: 20px;
+        font-size: 0.8em !important;
+        text-align: center;
+      }
     }
     .icon {
       width: 20px;
@@ -1284,6 +1153,19 @@
     }
     .title {
       color: #000,
+    }
+
+    .welcomeBtn {
+      margin-top: 10px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border-width: 0;
+      cursor: pointer;
+      p {
+        color: #fff;
+        font-size: 0.8em;
+        font-weight: 600;
+      }
     }
   }
 }

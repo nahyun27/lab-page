@@ -89,10 +89,8 @@ function Publication ({ toggle, mode }) {
       "pdf": '',
       "selected": false,
     }, 
-
-
     {
-      "author": "CB Seo, G Lee, Yeonjoon Lee, SH Seo",
+      "author": "CB Seo, G Lee, Yeonjoon Lee, SH Seo ",
       "title": 'Echo-guard: Acoustic-based anomaly detection system for smart manufacturing environments',
       "conference": 'International Conference on Information Security Applications, 64-75, 2021',
       "link": 'https://link.springer.com/chapter/10.1007/978-3-030-89432-0_6',
@@ -100,7 +98,7 @@ function Publication ({ toggle, mode }) {
       "selected": false,
     }, 
     {
-      "author": "Yeonjoon Lee, Xueqiang Wang, Xiaojing Liao, XiaoFeng Wang.",
+      "author": "Yeonjoon Lee, Xueqiang Wang, Xiaojing Liao, XiaoFeng Wang ",
       "title": 'Understanding Illicit UI in iOS apps Through Hidden UI Analysis. ',
       "conference": 'Accepted in the IEEE Transactions on Dependable and Secure Computing (TDSC), 2019.',
       "link": 'http://yeonjoonlee.com/publication/2019chameleon/',
@@ -108,7 +106,7 @@ function Publication ({ toggle, mode }) {
       "selected": false,
     }, 
     {
-      "author": 'Dahye Song, Taewan Kim, Yeonjoon Lee, Jaeyoung Kim',
+      "author": 'Dahye Song, Taewan Kim, Yeonjoon Lee, Jaeyoung Kim ',
       "title": 'Image-Based Artificial Intelligence Technology for Diagnosing Middle Ear Diseases: A Systematic Review ',
       "conference": 'Journal of Clinical Medicine, 2023',
       "link": 'https://www.mdpi.com/2077-0383/12/18/5831',
@@ -116,7 +114,7 @@ function Publication ({ toggle, mode }) {
       "selected": false,
     }, 
     {
-      "author": "Cheng'an Wei, Yeonjoon Lee, Kai Chen, Guozhu Meng, Peizhuo Lv",
+      "author": "Cheng'an Wei, Yeonjoon Lee, Kai Chen, Guozhu Meng, Peizhuo Lv ",
       "title": 'Aliasing Backdoor Attacks on Pre-trained Models ',
       "conference": '32nd USENIX Security Symposium (USENIX Security 23), 2023',
       "link": 'https://www.usenix.org/conference/usenixsecurity23/presentation/wei-chengan',
@@ -124,7 +122,7 @@ function Publication ({ toggle, mode }) {
       "selected": true,
     }, 
     {
-      "author": "Dahye Song, In Sik Song, Jaeyoung Kim, June Choi, Yeonjoon Lee",
+      "author": "Dahye Song, In Sik Song, Jaeyoung Kim, June Choi, Yeonjoon Lee ",
       "title": 'Semantic Decomposition and Anomaly Detection of Tympanic Membrane Endoscopic Images ',
       "conference": 'Applied Sciences, 2022',
       "link": 'https://www.mdpi.com/2076-3417/12/22/11677',
@@ -132,7 +130,7 @@ function Publication ({ toggle, mode }) {
       "selected": false,
     }, 
     {
-      "author": "Taewan Kim, Sangyeop Kim, Jaeyoung Kim, Yeonjoon Lee, June Choi",
+      "author": "Taewan Kim, Sangyeop Kim, Jaeyoung Kim, Yeonjoon Lee, June Choi ",
       "title": 'Toward better ear disease diagnosis: A multi-modal multi-fusion model using endoscopic images of the tympanic membrane and pure-tone audiometry ',
       "conference": 'IEEE Access, 2023',
       "link": 'https://ieeexplore.ieee.org/abstract/document/10286540',
@@ -140,7 +138,7 @@ function Publication ({ toggle, mode }) {
       "selected": false,
     }, 
     {
-      "author": "Taewan Kim, KyoungHo Oh, Jaeyoung Kim, Yeonjoon Lee, June Choi",
+      "author": "Taewan Kim, KyoungHo Oh, Jaeyoung Kim, Yeonjoon Lee, June Choi ",
       "title": 'Development of ResNet152 UNet++-based segmentation algorithm for the tympanic membrane and affected areas ',
       "conference": 'IEEE Access, 2023',
       "link": 'https://ieeexplore.ieee.org/abstract/document/10138898',
@@ -156,12 +154,28 @@ function Publication ({ toggle, mode }) {
       "selected": false,
     }, 
     {
-      "author": "Taewan Kim, Sangyeop Kim, Jaeyoung Kim, Yeonjoon Lee, June Choi",
+      "author": "Taewan Kim, Sangyeop Kim, Jaeyoung Kim, Yeonjoon Lee, June Choi ",
       "title": 'Automatic Diagnosis of Chronic Otitis Media with a Dual Neural Network Using Pure-Tone Audiometry and Tympanic Membrane Images ',
       "conference": 'SSRN 4390612 ',
       "link": 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4390612 ',
       "pdf": '',
       "selected": false,
+    },
+    {
+      "author": "Chang Yue, Chen Zhong, Kai Chen, Zhiyu Zhang, Yeonjoon Lee ",
+      "title": 'DARKFLEECE: Probing the Dark Side of Android Subscription Apps ',
+      "conference": '33rd USENIX Security Symposium, 2024',
+      "link": '',
+      "pdf": '',
+      "selected": true,
+    },
+    {
+      "author": "Sungbin Park, Xueqiang Wang, Chen Kai, and Yeonjoon Lee ",
+      "title": 'STATION: Gesture-based Authentication for Voice Interfaces ',
+      "conference": 'IEEE Internet of Things Journal, 2024',
+      "link": '',
+      "pdf": '',
+      "selected": true,
     },
   ]
 
@@ -195,9 +209,9 @@ function Publication ({ toggle, mode }) {
       <div>
         {data.map((d, idx) => {
           if (d.selected === true) return (
-          <BasicBox className="card">
+          <BasicBox key={idx} className="paperCard">
             <p>{highlightText(d.author, 'Yeonjoon Lee')}</p>
-            <Orange className='paper-link' onClick={()=>{window.open(d.link)}} >{d.title}</Orange>
+            <Orange className='paper-link' onClick={()=>{d.link !== '' && window.open(d.link)}} >{d.title}</Orange>
             <p>{d.conference}</p>
           </BasicBox>
           )})}
@@ -215,11 +229,11 @@ function Publication ({ toggle, mode }) {
           <h2><FormattedMessage id="publications" /></h2>
         </div> 
           <div className="card-list">
-          {data.map((d, idx) => (
-            <BasicBox className="card">
-              <p>{highlightText(d.author, 'Yeonjoon Lee')}{' '}</p>
-              <Orange className='paper-link' onClick={()=>{window.open(d.link)}} >{d.title}</Orange>
-              <p>{d.conference}</p>
+          {data.map((m, idx) => (
+            <BasicBox key={idx}  className="paperCard">
+              <p>{highlightText(m.author, 'Yeonjoon Lee')}{' '}</p>
+              <Orange className='paper-link' onClick={()=>{m.link !== '' && window.open(m.link)}} >{m.title}</Orange>
+              <p>{m.conference}</p>
             </BasicBox>
             ))
             }

@@ -57,8 +57,8 @@ export default function CardSlider({photos}) {
   return (
     <Container className='containerG'>
       <Slider {...settings}>
-				{photos.map((p) =>(
-          <div className='cardCover'>
+				{photos.map((p, i) =>(
+          <div key={i} className='cardCover'>
             <img className="card" src={p} alt="" />
           </div>
         ))}
