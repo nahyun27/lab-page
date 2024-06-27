@@ -12,6 +12,7 @@ import Members from 'pages/Members';
 import Publication from 'pages/publication/Publication';
 import Contact from 'pages/Contact';
 import Gallery from 'pages/Gallery';
+import Project from 'pages/project/Project';
 import Header from 'components/Header';
 import { useTheme } from 'context/themeProvider';
 import Footer from 'components/Footer';
@@ -24,9 +25,9 @@ function Main() {
         <Home position="relative" id="Home" toggle={toggleTheme} mode={themeMode} />
         <Research position="relative" id="Research" toggle={toggleTheme} mode={themeMode} />
         <Members position="relative" id="Members" toggle={toggleTheme} mode={themeMode} />
-        <Publication position="relative" id="Publication" toggle={toggleTheme} mode={themeMode} />
-        <Gallery position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} />
-        {/* <Contact position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} /> */}
+        <Publication position="relative" id="Publication" toggle={toggleTheme} mode={themeMode} /><Project position="relative" id="Project" toggle={toggleTheme} mode={themeMode} />
+        <Gallery position="relative" id="Gallery" toggle={toggleTheme} mode={themeMode} />
+        <Contact position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} />
         <Footer toggle={toggleTheme} mode={themeMode} />
         <Header toggle={toggleTheme} mode={themeMode} />
     </div>

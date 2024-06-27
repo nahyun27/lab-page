@@ -7,11 +7,11 @@ import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import NewsList from './NewsList';
 import RecruitingSection from './RecruitingSection';
-import i1 from 'assets/i1.png';
-import i2 from 'assets/i2.png';
-import i3 from 'assets/i3.png';
-import i4 from 'assets/i4.png';
-import i5 from 'assets/i5.png';
+import i1 from 'assets/news/i1.png';
+import i2 from 'assets/news/i2.png';
+import i3 from 'assets/news/i3.png';
+import i4 from 'assets/news/i4.png';
+import i5 from 'assets/news/i5.png';
 import { Backdrop, ModifyModal } from '../../components/ModifyModal';
 
 function Home() {

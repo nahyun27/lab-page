@@ -10,6 +10,7 @@ function Publication({ toggle, mode }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const data = [
     {
+      "id": 21, 
       "author": "Sungbin Park, Xueqiang Wang, Chen Kai, and Yeonjoon Lee ",
       "title": 'STATION: Gesture-based Authentication for Voice Interfaces ',
       "conference": 'IEEE Internet of Things Journal, 2024',
@@ -18,6 +19,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     },
     {
+      "id": 20,
       "author": "Chang Yue, Chen Zhong, Kai Chen, Zhiyu Zhang, Yeonjoon Lee ",
       "title": 'DARKFLEECE: Probing the Dark Side of Android Subscription Apps ',
       "conference": '33rd USENIX Security Symposium, 2024',
@@ -26,6 +28,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     },
     {
+      "id": 19,
       "author": "Taewan Kim, Sangyeop Kim, Jaeyoung Kim, Yeonjoon Lee, June Choi ",
       "title": 'Automatic Diagnosis of Chronic Otitis Media with a Dual Neural Network Using Pure-Tone Audiometry and Tympanic Membrane Images ',
       "conference": 'SSRN 4390612 ',
@@ -34,6 +37,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     },
     {
+      "id": 18,
       "author": "L Zhang, Y Lee",
       "title": 'Detection Techniques for Chinese Jargon: A Survey ',
       "conference": '한국통신학회 학술대회논문집, 1348-1349, 2023 ',
@@ -42,6 +46,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     },
     {
+      "id": 17,
       "author": "Taewan Kim, KyoungHo Oh, Jaeyoung Kim, Yeonjoon Lee, June Choi ",
       "title": 'Development of ResNet152 UNet++-based segmentation algorithm for the tympanic membrane and affected areas ',
       "conference": 'IEEE Access, 2023',
@@ -50,6 +55,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     },
     {
+      "id": 16,
       "author": "Taewan Kim, Sangyeop Kim, Jaeyoung Kim, Yeonjoon Lee, June Choi ",
       "title": 'Toward better ear disease diagnosis: A multi-modal multi-fusion model using endoscopic images of the tympanic membrane and pure-tone audiometry ',
       "conference": 'IEEE Access, 2023',
@@ -58,6 +64,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     },
     {
+      "id": 15,
       "author": "Dahye Song, In Sik Song, Jaeyoung Kim, June Choi, Yeonjoon Lee ",
       "title": 'Semantic Decomposition and Anomaly Detection of Tympanic Membrane Endoscopic Images ',
       "conference": 'Applied Sciences, 2022',
@@ -66,6 +73,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     },
     {
+      "id": 14,
       "author": "Cheng'an Wei, Yeonjoon Lee, Kai Chen, Guozhu Meng, Peizhuo Lv ",
       "title": 'Aliasing Backdoor Attacks on Pre-trained Models ',
       "conference": '32nd USENIX Security Symposium (USENIX Security 23), 2023',
@@ -74,6 +82,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     },
     {
+      "id": 13,
       "author": 'Dahye Song, Taewan Kim, Yeonjoon Lee, Jaeyoung Kim ',
       "title": 'Image-Based Artificial Intelligence Technology for Diagnosing Middle Ear Diseases: A Systematic Review ',
       "conference": 'Journal of Clinical Medicine, 2023',
@@ -82,6 +91,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     },
     {
+      "id": 12,
       "author": "CB Seo, G Lee, Yeonjoon Lee, SH Seo ",
       "title": 'Echo-guard: Acoustic-based anomaly detection system for smart manufacturing environments',
       "conference": 'International Conference on Information Security Applications, 64-75, 2021',
@@ -90,6 +100,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     }, 
     {
+      "id": 11,
       "author": "Yeonjoon Lee, Yue Zhao, Jiutian Zeng, Kwangwuk Lee, Nan Zhang, Faysal Hossain Shezan, Yuan Tian, Kai Chen, XiaoFeng Wang.",
       "title": 'Using Sonar for Liveness Detection to Protect Smart Speakers Against Remote Attackers.',
       "conference": 'Accepted in the UbiComp 2020 / ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2020.',
@@ -98,6 +109,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     }, 
     {
+      "id": 10,
       "author": "Yeonjoon Lee, Xueqiang Wang, Xiaojing Liao, XiaoFeng Wang ",
       "title": 'Understanding Illicit UI in iOS apps Through Hidden UI Analysis. ',
       "conference": 'Accepted in the IEEE Transactions on Dependable and Secure Computing (TDSC), 2019.',
@@ -106,6 +118,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     }, 
     {
+      "id": 9,
       "author": "Yeonjoon Lee, Xueqiang Wang, Kwangwuk Lee, Xiaojing Liao, XiaoFeng Wang,Tongxin Li, Xianghang Mi.",
       "title": 'Understanding iOS-based Crowdturfing Through Hidden UI Analysis. ',
       "conference": 'In USENIX Security, 2019.',
@@ -114,6 +127,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     }, 
     {
+      "id": 8,
       "author": " Yeonjoon Lee, Tongxin Li, Nan Zhang, Soteris Demetriou, Mingming Zha, XiaoFeng Wang, Kai Chen, Xiaoyong Zhou, Xinhui Han, Michael Grace.",
       "title": 'Ghost Installer in the Shadow: Security Analysis of App Installation on Android.',
       "conference": 'In DSN, 2017.',
@@ -122,6 +136,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     }, 
     {
+      "id": 7,
       "author": "Yi Chen, Wei You, Yeonjoon Lee, Kai Chen, XiaoFeng Wang, Wei Zou.",
       "title": 'Mass Discovery of Android Traffic Imprints through Instantiated Partial Execution. ',
       "conference": 'In CCS, 2017',
@@ -130,6 +145,8 @@ function Publication({ toggle, mode }) {
       "selected": true,
     }, 
     {
+
+      "id": 6,
       "author": "Soteris Demetriou, Nan Zhang, Yeonjoon Lee, XiaoFeng Wang, Carl A Gunter, Xiaoyong Zhou, Michael Grace.",
       "title": ' HanGuard: SDN-driven protection of smart home WiFi devices from malicious mobile apps.',
       "conference": 'In WISEC, 2017.',
@@ -138,6 +155,7 @@ function Publication({ toggle, mode }) {
       "selected": false,
     },  
     {
+      "id": 5,
       "author": "Kai Chen, Xueqiang Wang, Yi Chen, Peng Wang, Yeonjoon Lee, XiaoFeng Wang, Bin Ma, Aohui Wang, Yingjun Zhang, Wei Zou.",
       "title": 'Following devil\'s footprints: Cross-platform analysis of potentially harmful libraries on android and ios.',
       "conference": 'In S&P, 2016.',
@@ -146,6 +164,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     }, 
     {
+      "id": 4,
       "author": "Soteris Demetriou, Xiaoyong Zhou, Muhammad Naveed, Yeonjoon Lee, Kan Yuan, XiaoFeng Wang, Carl A Gunter.",
       "title": 'What\'s in Your Dongle and Bank Account? Mandatory and Discretionary Protection of Android External Resources.',
       "conference": 'In NDSS, 2015.',
@@ -154,6 +173,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     }, 
     {
+      "id": 3,
       "author": "Kai Chen, Peng Wang, Yeonjoon Lee, XiaoFeng Wang, Nan Zhang, Heqing Huang, Wei Zou, Peng Liu.",
       "title": 'Finding Unknown Malice in 10 Seconds: Mass Vetting for New Threats at the Google-Play Scale.',
       "conference": 'In USENIX Security, 2015.',
@@ -162,6 +182,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     }, 
     {
+      "id": 2,
       "author": "Xiaoyong Zhou, Yeonjoon Lee, Nan Zhang, Muhammad Naveed, XiaoFeng Wang.",
       "title": 'The peril of fragmentation: Security hazards in android device driver customizations.',
       "conference": 'In S&P, 2014.',
@@ -170,6 +191,7 @@ function Publication({ toggle, mode }) {
       "selected": true,
     }, 
     {
+      "id": 1,
       "author": "Tongxin Li, Xiaoyong Zhou, Luyi Xing, Yeonjoon Lee, Muhammad Naveed, XiaoFeng Wang, Xinhui Han.",
       "title": ' Mayhem in the push clouds: Understanding and mitigating security hazards in mobile push-messaging services. ',
       "conference": 'In CCS, 2014.',
