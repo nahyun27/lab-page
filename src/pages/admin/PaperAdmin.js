@@ -55,7 +55,7 @@ const PaperAdmin = () => {
         closeModal();
       })
       .catch((err) => console.error("Network Error: ", err));
-  };
+  }; 
 
   const handleDelete = () => {
     axios
