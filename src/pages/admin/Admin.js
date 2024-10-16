@@ -18,7 +18,7 @@ function Admin() {
     <Container>
       <Header>
         <BackButton onClick={handleBack}>← Back</BackButton>
-        <Title>ACE Lab Admin Page(불안해서 아직 연동 안함 마음껏 바꿔도 댐)</Title>
+        <Title>ACE Lab Admin Page(뉴스는 불안해서 아직 연동 안함)</Title>
       </Header>
         
         <Nav>

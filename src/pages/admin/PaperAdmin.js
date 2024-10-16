@@ -18,7 +18,9 @@ const PaperAdmin = () => {
   });
   const [paperToDelete, setPaperToDelete] = useState(null);
 
-  const BASE_URL = "http://192.168.0.166:3000";
+
+  const BASE_URL = "https://192.168.0.166:443";
+  // const BASE_URL = "https://166.104.245.67:443";
 
   useEffect(() => {
     fetchPapers();
@@ -43,13 +45,13 @@ const PaperAdmin = () => {
       ? `${BASE_URL}/api/papers/${newPaper._id}`
       : `${BASE_URL}/api/papers`;
     const method = isEditMode ? 'put' : 'post';
-
-    axios({
+    const userData = {
       method: method,
       url: url,
       data: newPaper,
       headers: { 'Content-Type': 'application/json' }
-    })
+    }
+    axios(userData)
       .then((res) => {
         fetchPapers();
         closeModal();

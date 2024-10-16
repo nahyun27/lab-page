@@ -8,6 +8,7 @@ import { Backdrop, ModifyModal } from 'components/ModifyModal';
 import { useAuth } from 'AuthContext';  // AuthContext 가져오기
 import image from 'assets/blossom_back.jpeg';
 import sha256 from 'crypto-js/sha256';
+import Map from 'components/Map';
 
 const encryptedLink = 'U2FsdGVkX18HyXrFWHdGOkOwkQOl87+lK7pLpDOG+dJisfaRsR++xQnM8nXUSwhMKpIghcZ3B6UxJ6GkXAxSSgnSP8V57+qfA3PdlpmfmCWq8dU/MTBfNhoXOX/TYrUiG9JkVv+FC3ztep0foU/5dA==';
 
@@ -56,6 +57,7 @@ function Contact({ toggle, mode }) {
         <p><FormattedMessage id="cont2" /></p>
         <img className='backImage' src={image} alt="" />
       </div>
+      <Map></Map>
       <div className='info-box'>
         <a href="mailto:yeonjoonlee@hanyang.ac.kr"><p className='info-text'>yeonjoonlee@hanyang.ac.kr</p></a>
         <p onClick={() => { window.open('https://map.kakao.com/?urlX=463700&urlY=1054951&urlLevel=3&itemId=26973368&q=%ED%95%9C%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90%20%EC%A0%9C4%EA%B3%B5%ED%95%99%EA%B4%80&srcid=26973368&map_type=TYPE_MAP') }} className='info-text'><FormattedMessage id="address" /></p><br />
@@ -63,9 +65,9 @@ function Contact({ toggle, mode }) {
         <PointBox onClick={() => {setIsModalVisible(true); }} className='welcomeBtn'>
           <p>WELCOME DOCS</p>
         </PointBox>
-        <PointBox onClick={() => {setIsModalVisible2(true);}} className='welcomeBtn'>
+        {/* <PointBox onClick={() => {setIsModalVisible2(true);}} className='welcomeBtn'>
           <p>ADMIN PAGE</p>
-        </PointBox>
+        </PointBox> */}
       </div>
       <ModifyModal
         show={isModalVisible}

@@ -22,33 +22,39 @@ function Home() {
   const data = [
     {
       title: 't1',
-      date: '2024.03.29',
+      date: '2024.09.09',
       contents: 'c1',
-      image: i1,
+      image: '',
     },
     {
       title: 't2',
-      date: '2024.03.29',
+      date: '2024.05.21',
       contents: 'c2',
-      image: i2, 
+      image: i5, 
     },
     {
       title: 't3',
       date: '2024.03.29',
       contents: 'c3',
-      image: i3, 
+      image: i1, 
     },
     {
       title: 't4',
       date: '2024.03.29',
       contents: 'c4',
-      image: i4, 
+      image: i2, 
     },
     {
       title: 't5',
-      date: '2024.05.21',
+      date: '2024.03.29',
       contents: 'c5',
-      image: i5,
+      image: i3,
+    },
+    {
+      title: 't6',
+      date: '2024.03.29',
+      contents: 'c6',
+      image: i4,
     },
   ];
 

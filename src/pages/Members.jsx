@@ -52,6 +52,7 @@ function Members ({ toggle, mode }) {
       "email": 'pbt98@hanyang.ac.kr',
       "mbti": 'ENFJ',
       "interest": 'sungbinR',
+      "page": 'https://pbt98.github.io/',
     }, 
     {
       "name": "sungju",
@@ -184,7 +185,11 @@ function Members ({ toggle, mode }) {
                 onMouseOver={() => {setIsListHover2(true); setNumber2(idx)}}
                 onMouseOut={() => setIsListHover2(false)}
                 className='profile' src={isListHover2 && number2 === idx? p.imageB : p.image} alt="" />
-              <p className='name'><FormattedMessage id={p.name} /></p>
+                <div className='row-box'>
+                  <p className='name'><FormattedMessage id={p.name} /></p>
+                  {p.page && 
+                  <img onClick={()=>{window.open(p.page)}} className='home' src={home} alt="" />}
+                </div>
               <p className='email'>{p.email}</p>
               <div className='row-box'>
                 <Tooltip translate={false} message={p.mbti}>

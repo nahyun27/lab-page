@@ -18,7 +18,8 @@ const NewsAdmin = () => {
   const [preview, setPreview] = useState("");
   const [newsToDelete, setNewsToDelete] = useState(null);
 
-  const BASE_URL = "http://192.168.0.166:3000";
+  const BASE_URL = "https://192.168.0.166:443";
+  // const BASE_URL = "https://166.104.245.67:443";
 
   useEffect(() => {
     fetchNews();
@@ -63,13 +64,13 @@ const NewsAdmin = () => {
       ? `${BASE_URL}/api/news/${newNews._id}`
       : `${BASE_URL}/api/news`;
     const method = isEditMode ? 'put' : 'post';
-
-    axios({
+    const userData = {
       method: method,
       url: url,
       data: formData,
       headers: { 'Content-Type': 'multipart/form-data' }
-    })
+    }
+    axios(userData)
       .then((res) => {
         fetchNews();
         closeModal();
