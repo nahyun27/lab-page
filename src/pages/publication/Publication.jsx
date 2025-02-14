@@ -36,6 +36,33 @@ function Publication({ toggle, mode }) {
   ];
   const data = [
     {
+      "id": 27, 
+      "author": "Dahye Song, Younghan Chung, Jaeyoung Kim, June Choi, and Yeonjoon Lee",
+      "title": 'Cooperative GAN: Automated Tympanic Membrane Anomaly Detection Using a Cooperative Observation Network.',
+      "conference": 'computer methods and programs in biomedicine, 2025',
+      "link": '',
+      "new": 'y',
+      "selected": true,
+    },
+    {
+      "id": 26, 
+      "author": "Dahye Song, Taewan Kim, Yeonjoon Lee and Jaeyoung Kim",
+      "title": 'Image-Based Artificial Intelligence Technology for Diagnosing Middle Ear Diseases: A Systematic Review.',
+      "conference": 'Journal of Clinical Medicine, 2023',
+      "link": 'https://doi.org/10.3390/jcm12185831',
+      "new": 'y',
+      "selected": true,
+    },
+    {
+      "id": 25, 
+      "author": "Dahye Song, In Sik Song, Jaeyoung Kim, June Choi, and Yeonjoon Lee",
+      "title": 'Semantic Decomposition and Anomaly Detection of Tympanic Membrane Endoscopic Images.',
+      "conference": 'Applied sciences, 2022',
+      "link": 'https://doi.org/10.3390/app122211677',
+      "new": 'y',
+      "selected": true,
+    },
+    {
       "id": 24, 
       "author": "Jiwon Han, Byungmin Choi, Jae Young Kim, Yeonjoon Lee",
       "title": 'BO-CLAHE enhancing neonatal chest X-ray image quality for improved lesion classification',
