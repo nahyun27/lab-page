@@ -23,7 +23,9 @@ import hoon from 'assets/members/hoon.png';
 import minjae from 'assets/members/minjae.jpeg';
 import cheng from 'assets/members/cheng.jpeg';
 import gagyeom from 'assets/members/gagyeom.jpeg';
-import hanbi from 'assets/members/hanbi.jpeg';
+import hanbi from 'assets/members/hanbi.png';
+import sijun from 'assets/members/sijun.png';
+import minhyeok from 'assets/members/minhyeok.jpeg';
 import yonghyun from 'assets/members/yonghyun.jpeg';
 import yonghyunB from 'assets/members/yonghyunB.png';
 import jungmin from 'assets/members/jungmin.png';
@@ -135,6 +137,22 @@ function Members ({ toggle, mode }) {
       "email": 'dlagksql4@gmail.com',
       "mbti": 'INFP',
       "interest": 'hanbiR',
+    }, 
+    {
+      "name": "sijun",
+      "image": sijun,
+      "imageB": sijun,
+      "email": 'ghkdtlwns987@hanyang.ac.kr',
+      "mbti": 'ISTP',
+      "interest": 'sijunR',
+    }, 
+    {
+      "name": "minhyeok",
+      "image": minhyeok,
+      "imageB": minhyeok,
+      "email": 'thd1008@hanyang.ac.kr',
+      "mbti": 'INTJ',
+      "interest": 'minhyeokR',
     }, 
   ]
 

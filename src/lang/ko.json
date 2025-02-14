@@ -67,6 +67,8 @@
   "minjae":  "강민재",
   "nahyun":  "김나현",
   "hanbi":  "임한비",
+  "sijun":  "황시준",
+  "minhyeok":  "송민혁",
 
   "interest": "연구 분야",
 
@@ -85,6 +87,8 @@
   "minjaeR":  "네트워크 보안", 
   "nahyunR":  "인공지능 보안",
   "hanbiR":  "인공지능 보안",
+  "sijunR":  "시스템 보안, 인공지능 보안, 프로그램 분석",
+  "minhyeokR":  "인공지능 보안",
 
 
   "t1":  "박성빈 학생, Journal of Network and Computer Applications 논문 게재 확정", 
