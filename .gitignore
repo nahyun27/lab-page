@@ -11,7 +11,7 @@
 # production
 /build
 /src/assets
-/src/secure/
+/src/secure
 
 # misc
 .DS_Store
