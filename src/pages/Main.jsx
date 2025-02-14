@@ -27,7 +27,7 @@ function Main() {
         <Members position="relative" id="Members" toggle={toggleTheme} mode={themeMode} />
         <Publication position="relative" id="Publication" toggle={toggleTheme} mode={themeMode} /><Project position="relative" id="Project" toggle={toggleTheme} mode={themeMode} />
         <Gallery position="relative" id="Gallery" toggle={toggleTheme} mode={themeMode} />
-        <Contact position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} />
+        {/* <Contact position="relative" id="Contact" toggle={toggleTheme} mode={themeMode} /> */}
         <Footer toggle={toggleTheme} mode={themeMode} />
         <Header toggle={toggleTheme} mode={themeMode} />
     </div>

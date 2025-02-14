@@ -23,7 +23,7 @@ import hoon from 'assets/members/hoon.png';
 import minjae from 'assets/members/minjae.jpeg';
 import cheng from 'assets/members/cheng.jpeg';
 import gagyeom from 'assets/members/gagyeom.jpeg';
-import juyeon from 'assets/members/juyeon.jpeg';
+import hanbi from 'assets/members/hanbi.jpeg';
 import yonghyun from 'assets/members/yonghyun.jpeg';
 import yonghyunB from 'assets/members/yonghyunB.png';
 import jungmin from 'assets/members/jungmin.png';
@@ -89,22 +89,6 @@ function Members ({ toggle, mode }) {
       "interest": 'jungminR',
     }, 
     {
-      "name": "cheng",
-      "image": cheng,
-      "imageB": cheng,
-      "email": 'zyc0928@hanyang.ac.kr',
-      "mbti": 'ESFP',
-      "interest": 'chengR',
-    }, 
-    {
-      "name": "lixiang",
-      "image": lixiang,
-      "imageB": lixiang,
-      "email": 'lx913247225@hanyang.ac.kr',
-      "mbti": 'ENFP',
-      "interest": 'lixiangR',
-    }, 
-    {
       "name": "yonghyun",
       "image": yonghyun,
       "imageB": yonghyunB,
@@ -145,6 +129,17 @@ function Members ({ toggle, mode }) {
       "interest": 'nahyunR',
     }, 
     {
+      "name": "hanbi",
+      "image": hanbi,
+      "imageB": hanbi,
+      "email": 'dlagksql4@gmail.com',
+      "mbti": 'INFP',
+      "interest": 'hanbiR',
+    }, 
+  ]
+
+  const alumni = [
+    {
       "name": "taewan",
       "image": taewan,
       "imageB": taewan,
@@ -152,14 +147,23 @@ function Members ({ toggle, mode }) {
       "mbti": 'ENTJ',
       "interest": 'taewanR',
     }, 
-    // {
-    //   "name": "juyeon",
-    //   "image": juyeon,
-    //   "imageB": juyeon,
-    //   "email": 'kimjuyeon0912@gmail.com',
-    //   "mbti": 'ESTJ',
-    //   "interest": 'juyeonR',
-    // }, 
+    {
+      "name": "cheng",
+      "image": cheng,
+      "imageB": cheng,
+      "email": 'zyc0928@hanyang.ac.kr',
+      "mbti": 'ESFP',
+      "interest": 'chengR',
+    }, 
+    {
+      "name": "lixiang",
+      "image": lixiang,
+      "imageB": lixiang,
+      "email": 'lx913247225@hanyang.ac.kr',
+      "mbti": 'ENFP',
+      "interest": 'lixiangR',
+    }, 
+
   ]
   return(
     <BasicBox className="Members">
@@ -210,6 +214,35 @@ function Members ({ toggle, mode }) {
         <h1><FormattedMessage id="master" /></h1>
         <div className='container'>
           {masters.map((m, idx) => (
+            <div key={idx} className='item'>
+              <img  
+              onMouseOver={() => {setIsListHover(true); setNumber(idx)}}
+              onMouseOut={() => setIsListHover(false)}
+              className='profile' src={isListHover && number === idx? m.imageB : m.image} alt="" />
+              <p className='name'><FormattedMessage id={m.name} /></p>
+              <p className='email'>{m.email}</p>
+              {/* <p className='email'>{m.mbti}</p>
+              <p className='email'><FormattedMessage id={m.interest}/></p> */}
+              <div className='row-box'>
+                <Tooltip translate={false} message={m.mbti}>
+                  <MBTIBox className='mbti'>MBTI</MBTIBox>
+                </Tooltip>
+                <Tooltip message={m.interest}>
+                  <MBTIBox className='interest'><FormattedMessage id="interest"/></MBTIBox>
+                </Tooltip>
+              </div>
+              {m.home ? <img onClick={()=>{window.open(homepageUrl)}} className='home' src={home} alt="" />:<></>}
+            </div>
+          ))
+          }
+        </div>
+      </div>
+
+
+      <div className="master-box">
+        <h1><FormattedMessage id="alumni" /></h1>
+        <div className='container'>
+          {alumni.map((m, idx) => (
             <div key={idx} className='item'>
               <img  
               onMouseOver={() => {setIsListHover(true); setNumber(idx)}}

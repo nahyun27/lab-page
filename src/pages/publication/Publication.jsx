@@ -36,11 +36,20 @@ function Publication({ toggle, mode }) {
   ];
   const data = [
     {
+      "id": 24, 
+      "author": "Jiwon Han, Byungmin Choi, Jae Young Kim, Yeonjoon Lee",
+      "title": 'BO-CLAHE enhancing neonatal chest X-ray image quality for improved lesion classification',
+      "conference": 'Scientific Reports, 2025',
+      "link": 'https://www.nature.com/articles/s41598-025-88451-0',
+      "new": 'y',
+      "selected": true,
+    },
+    {
       "id": 23, 
       "author": "Sungbin Park, Changbae Seo, Xueqiang Wang, Yeonjoon Lee, Seung-Hyun Seo",
       "title": 'Exclusively In-Store: Acoustic Location Authentication for Stationary Business Devices',
       "conference": 'Journal of Network and Computer Applications, 2024',
-      "link": '',
+      "link": 'https://www.sciencedirect.com/science/article/pii/S1084804524002054',
       "new": 'y',
       "selected": true,
     },
@@ -49,16 +58,16 @@ function Publication({ toggle, mode }) {
       "author": "Minjae Kang, Sungbin Park, and Yeonjoon Lee ",
       "title": 'A Survey on Satellite Communication System Security',
       "conference": 'MDPI Sensors, 2024',
-      "link": '',
+      "link": 'https://www.mdpi.com/1424-8220/24/9/2897',
       "new": 'y',
       "selected": true,
     },
     {
       "id": 21, 
       "author": "Sungbin Park, Xueqiang Wang, Chen Kai, and Yeonjoon Lee ",
-      "title": 'STATION: Gesture-based Authentication for Voice Interfaces ',
+      "title": 'STATION: Gesture-based Authentication for Voice Interfaces',
       "conference": 'IEEE Internet of Things Journal, 2024',
-      "link": '',
+      "link": 'https://ieeexplore.ieee.org/document/10485205',
       "new": 'y',
       "selected": true,
     },
@@ -67,7 +76,7 @@ function Publication({ toggle, mode }) {
       "author": "Chang Yue, Chen Zhong, Kai Chen, Zhiyu Zhang, Yeonjoon Lee ",
       "title": 'DARKFLEECE: Probing the Dark Side of Android Subscription Apps ',
       "conference": '33rd USENIX Security Symposium, 2024',
-      "link": '',
+      "link": 'https://www.usenix.org/conference/usenixsecurity24/presentation/yue',
       "new": 'y',
       "selected": true,
     },
@@ -250,11 +259,11 @@ function Publication({ toggle, mode }) {
       <div className="title-box">
         <h1><FormattedMessage id="publications" /></h1>
       </div>
-      <div>
-        {data.filter(d => d.selected).map((d, idx) => (
-          <PaperCard key={idx} data={d} queries={memberList} />
+      <div className="paper-list">
+        {data.filter(d => d.selected).map((d) => (
+          <PaperCard key={d.id} data={d} queries={memberList} />
         ))}
-        <p onClick={() => setIsModalVisible(true)} className='more'>see more ▶</p>
+        <p onClick={() => setIsModalVisible(true)} className="more">see more ▶</p>
       </div>
       <PublicationsModal
         isVisible={isModalVisible}
@@ -269,5 +278,9 @@ function Publication({ toggle, mode }) {
 export default Publication;
 
 const GrayBox = styled.div`
-  background-color: ${({ theme }) => theme.bgColor}; 
+  background-color: ${({ theme }) => theme.bgColor};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
 `;

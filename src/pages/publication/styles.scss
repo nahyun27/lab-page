@@ -1,122 +1,88 @@
-
 .Publication {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f4f6f9;
-  padding-bottom: 100px;
-  .paperCard {
-    width: 1100px;
-    // margin: 20px 0;
-    border-bottom: 1px solid #858585;
-    // border-radius: 20px;
-    padding: 20px 34px;
-    p {
-      display: inline;
-      font-size: 1.1em;
-      line-height: 30px;
-    }
-    .paper-link {
-      cursor: pointer;
+  padding-bottom: 80px;
+
+  .title-box {
+    text-align: center;
+    margin-bottom: 16px;
+
+    h1 {
+      font-size: 1.8em;
+      font-weight: bold;
     }
   }
-  .paperCard:last-of-type {
-    border-bottom: none;
+
+  .paper-list {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
+  
+  .inline {
+    display: inline;
+  }
+
 
   .more {
-    margin-top: 10px;
-    cursor: pointer;
-    color: orange;
+    margin-top: 15px;
+    font-size: 1em;
     font-weight: bold;
-    font-size: 1.3em;
+    color: #ff6600;
     text-align: right;
-  }
-  .newLabel {
-    align-items: center;
-    background-color: rgb(249, 89, 57);
-    color: white;
-    font-weight: bold;
-    font-size: 0.9em;
-    padding: 2px 12px;
-    border-radius: 30px;
-    margin-right: 10px;
-  }
-}
+    cursor: pointer;
+    transition: color 0.2s;
 
-
-@media all and (max-width: 1250px) {
-
-  .Publication {
-    padding-bottom: 100px;
-    .paperCard {
-      width: 700px;
-      padding: 20px 30px;
-      p {
-        font-size: 1em;
-        line-height: 25px;
-      }
-    }
-    .more {
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-
-    .newLabel {
-      font-size: 0.8em;
-      padding: 2px 10px;
-      margin-right: 10px;
+    &:hover {
+      color: #cc5500;
     }
   }
 }
 
-
-@media all and (max-width: 840px) {
-
+/* 반응형 스타일 */
+@media (max-width: 1250px) {
   .Publication {
-    padding-bottom: 100px;
     .paperCard {
-      width: 500px;
-      padding: 20px 25px;
+      // width: 700px;
+      padding: 16px;
       p {
-        font-size: 1em;
-        line-height: 25px;
+        font-size: 0.85em;
       }
-    }
-    .more {
-      font-size: 1.1em;
-    }
-
-    .newLabel {
-      font-size: 0.7em;
-      padding: 2px 9px;
-      margin-right: 10px;
     }
   }
 }
 
-
-@media all and (max-width: 500px) {
-  
+@media (max-width: 840px) {
   .Publication {
-    padding-bottom: 100px;
     .paperCard {
-      width: 300px;
-      padding: 10px 16px;
+      // width: 500px;
+      padding: 14px;
       p {
-        font-size: 0.6em;
-        line-height: 12px;
+        font-size: 0.8em;
       }
     }
-    .more {
-      font-size: 1em;
-      padding-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Publication {
+    .title-box h1 {
+      font-size: 1.5em;
     }
-    .newLabel {
-      font-size: 0.3em;
-      padding: 2px 7px;
-      margin-right: 10px;
+
+    .paperCard {
+      // width: 90%;
+      padding: 12px;
+      p {
+        font-size: 0.75em;
+      }
+    }
+
+    .more {
+      font-size: 0.9em;
     }
   }
 }

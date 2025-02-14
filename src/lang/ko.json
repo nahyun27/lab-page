@@ -36,8 +36,10 @@
   "publications": "대표 출판물",
 
   "prof": "교수",
-  "phd": "박사 연구생",
-  "master": "석사 연구생",
+  "phd": "박사 과정 연구생",
+  "master": "석사 과정 연구생",
+  "alumni": "졸업생",
+  
 
   "cont1": "보안에 관심있는 열정적인 학생을 기다리고 있습니다.",
   "cont2": "아래 이메일로 간단한 소개와 함께 관심 분야를 알려주세요!",
@@ -64,7 +66,7 @@
   "hoon":  "지훈", 
   "minjae":  "강민재",
   "nahyun":  "김나현",
-  "juyeon": "김주연",
+  "hanbi":  "임한비",
 
   "interest": "연구 분야",
 
@@ -82,7 +84,7 @@
   "hoonR":  "드론 보안, 사물인터넷 보안", 
   "minjaeR":  "네트워크 보안", 
   "nahyunR":  "인공지능 보안",
-  "juyeonR": "의료 인공지능",
+  "hanbiR":  "인공지능 보안",
 
 
   "t1":  "박성빈 학생, Journal of Network and Computer Applications 논문 게재 확정", 

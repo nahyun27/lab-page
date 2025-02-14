@@ -10,6 +10,8 @@
 
 # production
 /build
+/src/assets
+/src/secure/key
 
 # misc
 .DS_Store
